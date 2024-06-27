@@ -179,7 +179,7 @@
             ><span
               class="text-primary-200 hover:underline underline-offline-4 underline-primary-200"
             >
-              Cloudsphere
+              Cloudsphere Technologies
             </span>
           </a>
         </p>

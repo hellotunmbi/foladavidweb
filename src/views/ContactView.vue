@@ -37,8 +37,8 @@
               <dd>
                 <a
                   class="hover:text-gray-400 text-default-800"
-                  href="mailto:contact@yourcompany.com"
-                  >contact@yourcompany.com</a
+                  href="mailto:unityindiversity@foladavid.com"
+                  >unityindiversity@foladavid.com</a
                 >
               </dd>
             </div>
@@ -62,7 +62,7 @@
                 </svg>
               </dt>
               <a href="tel:+234 813 190 6738"></a>
-              <dd class="text-default-800">0813 190 6738,</dd>
+              <dd class="text-default-800">08131906738,</dd>
               <a href="tel:+234 701 374 9934">
                 <dd class="text-default-800">07013749934</dd></a
               >
