@@ -33,38 +33,39 @@
               </h5>
               <ul class="flex flex-col gap-3">
                 <li>
-                  <a
-                    href="javascript:void(0);"
+                  <router-link
+                    to="/"
                     class="text-base hover:text-warning-300 text-default-700 transition-all"
-                    >About</a
+                    >Home</router-link
                   >
                 </li>
                 <li>
-                  <a
-                    href="javascript:void(0);"
+                  <router-link
+                    to="/about"
                     class="text-base hover:text-warning-300 text-default-700 transition-all"
-                    >Projects</a
+                    >About</router-link
                   >
                 </li>
                 <li>
-                  <a
-                    href="javascript:void(0);"
+                  <router-link
+                    to="/project"
                     class="text-base hover:text-warning-300 text-default-700 transition-all"
-                    >Donate</a
+                    >Projects</router-link
+                  >
+                </li>
+
+                <li>
+                  <router-link
+                    to="/media"
+                    class="text-base hover:text-warning-300 text-default-700 transition-all"
+                    >Media</router-link
                   >
                 </li>
                 <li>
-                  <a
-                    href="javascript:void(0);"
+                  <router-link
+                    to="/contact"
                     class="text-base hover:text-warning-300 text-default-700 transition-all"
-                    >Media</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="javascript:void(0);"
-                    class="text-base hover:text-warning-300 text-default-700 transition-all"
-                    >Contact</a
+                    >Contact</router-link
                   >
                 </li>
               </ul>
@@ -79,7 +80,9 @@
                 </h5>
                 <div class="space-y-3">
                   <a
-                    href="javascript:void(0);"
+                    href="https://www.facebook.com/profile.php?id=1378806367&mibextid=LQQJ4d"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     class="flex items-center gap-5 group"
                   >
                     <div
@@ -95,7 +98,9 @@
                   </a>
 
                   <a
-                    href="javascript:void(0);"
+                    href="https://www.instagram.com/foladavid"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     class="flex items-center gap-5 group"
                   >
                     <div
@@ -111,7 +116,9 @@
                   </a>
 
                   <a
-                    href="javascript:void(0);"
+                    href="https://x.com/foladavidart"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     class="flex items-center gap-5 group"
                   >
                     <div
@@ -127,7 +134,8 @@
                   </a>
 
                   <a
-                    href="javascript:void(0);"
+                    href="https://www.linkedin.com/in/dradefemifoladavid"
+                    rel="noopener noreferrer"
                     class="flex items-center gap-5 group"
                   >
                     <div
@@ -163,7 +171,17 @@
       <div class="py-6">
         <p class="text-base text-default-900 text-center">
           {{ year }}
-          © Unity in Diversity. All right Reversed.
+          © Unity in Diversity. All right Reversed. Designed by
+          <a
+            href="https://www.cloudspheretech.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span
+              class="text-primary-200 hover:underline underline-offline-4 underline-primary-200"
+            >
+              Cloudsphere
+            </span>
+          </a>
         </p>
       </div>
     </footer>

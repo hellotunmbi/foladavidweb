@@ -31,19 +31,21 @@
 
             <div class="w-[400px]">
               <select
+                v-model="selectedLink"
+                @change="navigate"
                 name="tribe"
                 id="tribe"
                 class="w-full bg-transparent border hover:text-primary-300 border-primary-50 py-2 md:py-3 rounded-md flex justify-between items-center px-3 over:cursor-pointer"
               >
                 <option value="" disabled selected>Select your tribe</option>
-                <option value="yoruba">Fulani</option>
-                <option value="yoruba">Hausa</option>
-                <option value="yoruba">Yoruba</option>
-                <option value="yoruba">Igbo</option>
-                <option value="yoruba">Ibibio</option>
-                <option value="yoruba">Ijaw</option>
-                <option value="yoruba">kanuri</option>
-                <option value="yoruba">Tiv</option>
+                <option value="https://getdp.co/Xyi">Fulani</option>
+                <option value="https://getdp.co/XyV">Hausa</option>
+                <option value="https://getdp.co/Xyq">Yoruba</option>
+                <option value="https://getdp.co/Xyo">Igbo</option>
+                <option value="https://getdp.co/Xyj">Ibibio</option>
+                <option value="https://getdp.co/XyX">Ijaw</option>
+                <option value="https://getdp.co/Xyp">kanuri</option>
+                <option value="https://getdp.co/XyL">Tiv</option>
               </select>
             </div>
           </div>
@@ -116,6 +118,15 @@ import {
 
 import type { Swiper as SwiperType } from "swiper/types";
 import { ref } from "vue";
+
+const selectedLink = ref("");
+
+const navigate = () => {
+  if (selectedLink.value) {
+    window.open(selectedLink.value, "_blank");
+  }
+  selectedLink.value = "";
+};
 
 const thumbsSwiper = ref<SwiperType | null>(null);
 const setThumbsSwiper = (swiper: SwiperType) => {

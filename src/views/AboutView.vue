@@ -131,23 +131,25 @@
 
       <!--  -->
       <section
-        class="mt-10 md:my-20 px-10 md:px-20 py-10 md:py-20 rounded-3xl bg-gradient-to-r from-[#38336b96] via-[#0b3451b7] to-[#38336b96]"
+        class="mt-10 md:my-20 px-5 md:px-20 py-10 md:py-20 rounded-3xl bg-gradient-to-r from-[#38336b96] via-[#0b3451b7] to-[#38336b96]"
       >
         <h2 class="text-3xl md:text-4xl text-center font-medium">
           Fola David Care Foundation
         </h2>
 
-        <div class="flex items-center gap-5 md:gap-10 mt-10 md:mt-20">
+        <div
+          class="flex flex-col lg:flex-row items-center gap-5 md:gap-10 mt-10 md:mt-20"
+        >
           <a
             href="http://www.foladavidfoundation.org"
             target="_blank"
             rel="noopener noreferrer"
-            class="h-[600px] w-full rounded-lg"
+            class="h-full lg:h-[600px] w-full rounded-lg"
           >
             <div>
               <img
                 src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1718884478/foundation_jacd9b.jpg"
-                class="h-[600px] w-full rounded-lg object-cover hover:bg-black hover:opacity-80 object-top"
+                class="h-full lg:h-[600px] w-full rounded-lg object-cover hover:bg-black hover:opacity-80 object-top"
                 alt="..."
               />
             </div>

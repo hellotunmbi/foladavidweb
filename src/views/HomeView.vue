@@ -1,11 +1,11 @@
 <template>
   <div>
     <!-- Hero -->
-    <div class="mt-20">
+    <div class="mt-20 section1">
       <HeroPage />
     </div>
     <!-- media -->
-    <div>
+    <div class="section1">
       <MediaView />
     </div>
 
@@ -24,7 +24,7 @@
     </div>
 
     <!-- Join hands -->
-    <section>
+    <section class="section1">
       <JoinHands />
     </section>
 
@@ -45,4 +45,19 @@ import SponsorView from "@/components/homes/SponsorView.vue";
 import JoinHands from "@/components/homes/JoinHands.vue";
 import ProjectView from "@/components/homes/ProjectView.vue";
 import MediaView from "@/components/homes/MediaView.vue";
+
+const sectionOne = document.querySelector(".section1");
+
+const options = {
+  root: null,
+  threshold: 0,
+  rootMargin: "-150px",
+};
+
+const observer = new IntersectionObserver(function (entries, observer) {
+  entries.forEach((entry) => {
+    console.log(entry);
+  });
+}, options);
+observer.observe(sectionOne);
 </script>

@@ -61,12 +61,18 @@
                   ></path>
                 </svg>
               </dt>
-              <dd class="text-default-800">+2347033733400,</dd>
-              <dd class="text-default-800">+2348123434522</dd>
+              <a href="tel:+234 813 190 6738"></a>
+              <dd class="text-default-800">0813 190 6738,</dd>
+              <a href="tel:+234 701 374 9934">
+                <dd class="text-default-800">07013749934</dd></a
+              >
             </div>
             <div class="flex items-center gap-5">
               <div class="cursor-pointer max-h-[52px] max-w-[52px]">
-                <a href="#" target="_blank" rel="noopener noreferrer"
+                <a
+                  href="https://x.com/foladavidart"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   ><img
                     src="@/assets/icons/twitter.png"
                     class="object-cover hover:scale-125 transition ease-in-out"
@@ -75,7 +81,10 @@
               </div>
 
               <div class="cursor-pointer max-h-[45px] max-w-[45px]">
-                <a href="#" target="_blank" rel="noopener noreferrer"
+                <a
+                  href="https://www.facebook.com/profile.php?id=1378806367&mibextid=LQQJ4d"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   ><img
                     src="@/assets/icons/facebook.svg"
                     class="object-cover hover:scale-125 transition ease-in-out"
@@ -84,7 +93,10 @@
               </div>
 
               <div class="cursor-pointer max-h-[40px] max-w-[40px]">
-                <a href="#" target="_blank" rel="noopener noreferrer"
+                <a
+                  href="https://www.linkedin.com/in/dradefemifoladavid"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   ><img
                     src="@/assets/icons/linkedin.svg"
                     class="object-cover hover:scale-125 transition ease-in-out"
@@ -92,7 +104,10 @@
                 /></a>
               </div>
               <div class="cursor-pointer max-h-[55px] max-w-[55px]">
-                <a href="#" target="_blank" rel="noopener noreferrer"
+                <a
+                  href="https://www.instagram.com/foladavid"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   ><img
                     src="@/assets/icons/instagram.png"
                     class="object-cover hover:scale-125 transition ease-in-out"
