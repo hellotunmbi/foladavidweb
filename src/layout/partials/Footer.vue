@@ -34,21 +34,21 @@
               <ul class="flex flex-col gap-3">
                 <li>
                   <router-link
-                    to="/"
+                    :to="{ name: 'home' }"
                     class="text-base hover:text-warning-300 text-default-700 transition-all"
                     >Home</router-link
                   >
                 </li>
                 <li>
                   <router-link
-                    to="/about"
+                    :to="{ name: 'about' }"
                     class="text-base hover:text-warning-300 text-default-700 transition-all"
                     >About</router-link
                   >
                 </li>
                 <li>
                   <router-link
-                    to="/project"
+                    :to="{ name: 'project' }"
                     class="text-base hover:text-warning-300 text-default-700 transition-all"
                     >Projects</router-link
                   >
@@ -56,14 +56,14 @@
 
                 <li>
                   <router-link
-                    to="/media"
+                    :to="{ name: 'media' }"
                     class="text-base hover:text-warning-300 text-default-700 transition-all"
                     >Media</router-link
                   >
                 </li>
                 <li>
                   <router-link
-                    to="/contact"
+                    :to="{ name: 'contact' }"
                     class="text-base hover:text-warning-300 text-default-700 transition-all"
                     >Contact</router-link
                   >

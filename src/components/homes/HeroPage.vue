@@ -21,7 +21,7 @@
           <div
             class="animate__animated animate__fadeInUp animate__delay-2s flex gap-4 items-center"
           >
-            <router-link to="/project">
+            <router-link :to="{ name: 'project' }">
               <button
                 class="capitalize bg-primary hover:text-warning px-5 md:px-10 hover:bg-primary/80 text-xs sm:text-sm 2xl:text-lg cursor-pointer text-white py-3 rounded-md"
               >

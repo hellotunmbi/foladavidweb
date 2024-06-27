@@ -7,33 +7,36 @@ import ProjectView from "../views/ProjectView.vue";
 import EthnicGroups from "@/components/EthnicGroups.vue";
 const routes: Array<RouteRecordRaw> = [
   {
-    path: "/home",
-    alias: "/",
+    path: "/unityindiversity",
     name: "home",
     component: HomeView,
   },
   {
-    path: "/about",
+    path: "/",
+    redirect: "/unityindiversity",
+  },
+  {
+    path: "/unityindiversity/about",
     name: "about",
     component: AboutView,
   },
   {
-    path: "/media",
+    path: "/unityindiversity/media",
     name: "media",
     component: MediaView,
   },
   {
-    path: "/project",
+    path: "/unityindiversity/project",
     name: "project",
     component: ProjectView,
   },
   {
-    path: "/contact",
+    path: "/unityindiversity/contact",
     name: "contact",
     component: ContactView,
   },
   {
-    path: "/ethnics-group",
+    path: "/unityindiversity/ethnics-group",
     name: "ethnics",
     component: EthnicGroups,
   },

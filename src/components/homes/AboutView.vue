@@ -63,7 +63,7 @@
 
             <div class="flex mt-10">
               <router-link
-                to="/about"
+                :to="{ name: 'about' }"
                 class="inline-flex items-center hover:text-warning justify-center gap-2 text-base py-3 px-8 rounded-md text-white bg-primary/90 hover:bg-primary transition-all duration-500"
                 >Read More
                 <svg

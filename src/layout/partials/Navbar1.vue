@@ -25,7 +25,7 @@
             <router-link
               class="inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 rounded-full capitalize"
               :class="active.includes('home') ? 'text-warning' : ''"
-              to="/"
+              :to="{ name: 'home' }"
               >Home</router-link
             >
           </li>
@@ -35,7 +35,7 @@
             <router-link
               class="inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 rounded-full capitalize"
               :class="active.includes('about') ? 'text-warning' : ''"
-              to="/about"
+              :to="{ name: 'about' }"
               >About</router-link
             >
           </li>
@@ -45,7 +45,7 @@
             <router-link
               class="inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 rounded-full capitalize"
               :class="active.includes('project') ? 'text-warning' : ''"
-              to="/project"
+              :to="{ name: 'project' }"
               >Project</router-link
             >
           </li>
@@ -55,7 +55,7 @@
             <router-link
               class="inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 rounded-full capitalize"
               :class="active.includes('media') ? 'text-warning' : ''"
-              to="/media"
+              :to="{ name: 'media' }"
               >Media</router-link
             >
           </li>
@@ -65,7 +65,7 @@
             <router-link
               class="inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 rounded-full capitalize"
               :class="active.includes('contact') ? 'text-warning' : ''"
-              to="/contact"
+              :to="{ name: 'contact' }"
               >Contact Us</router-link
             >
           </li>

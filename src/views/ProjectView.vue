@@ -41,7 +41,7 @@
             of national identity that transcends ethnic and regional loyalties.
           </p>
 
-          <router-link to="/ethnics-group">
+          <router-link :to="{ name: 'ethnics' }">
             <button
               class="capitalize hover:text-warning bg-primary px-5 mt-5 md:mt-10 md:px-10 hover:bg-primary/80 text-xs sm:text-sm 2xl:text-lg cursor-pointer text-white py-2.5 rounded-md"
             >
