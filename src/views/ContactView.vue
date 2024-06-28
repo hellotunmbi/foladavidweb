@@ -114,11 +114,27 @@
                     alt="instagram"
                 /></a>
               </div>
+              <div class="cursor-pointer max-h-[55px] max-w-[55px]">
+                <a
+                  href="https://www.tiktok.com/@foladavid"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img
+                    src="@/assets/icons/tiktok.png"
+                    class="object-cover hover:scale-125 transition ease-in-out"
+                    alt="tiktok"
+                /></a>
+              </div>
             </div>
           </dl>
         </div>
       </div>
-      <form class="px-6 pb-24 pt-10 sm:pb-32 lg:px-8 lg:py-32 card">
+      <form
+        id="form"
+        ref="form"
+        @submit.prevent
+        class="px-6 pb-24 pt-10 sm:pb-32 lg:px-8 lg:py-32 card"
+      >
         <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
           <h3 class="text-warning text-2xl font-bold">
             We welcome your feedback
@@ -126,33 +142,35 @@
           <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 mt-10">
             <div>
               <label
-                for="first-name"
+                for="name"
                 class="block text-sm font-semibold leading-6 text-default-600"
-                >First name</label
+                >Full name</label
               >
               <div class="mt-2.5">
                 <input
+                  required
                   type="text"
-                  id="first-name"
+                  id="name"
                   autocomplete="given-name"
                   class="block w-full bg-transparent rounded-full border focus:outline-none shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
-                  name="firstName"
+                  name="name"
                 />
               </div>
             </div>
             <div>
               <label
-                for="last-name"
+                for="phone"
                 class="block text-sm font-semibold leading-6 text-default-600"
-                >Last name</label
+                >Phone</label
               >
               <div class="mt-2.5">
                 <input
+                  required
                   type="text"
-                  id="last-name"
-                  autocomplete="family-name"
+                  id="phone"
+                  autocomplete="phone"
                   class="block w-full bg-transparent rounded-full border focus:outline-none shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
-                  name="lastName"
+                  name="phone"
                 />
               </div>
             </div>
@@ -164,6 +182,7 @@
               >
               <div class="mt-2.5">
                 <input
+                  required
                   type="email"
                   id="email"
                   autocomplete="email"
@@ -180,6 +199,7 @@
               >
               <div class="mt-2.5">
                 <textarea
+                  required
                   id="message"
                   rows="4"
                   class="block w-full bg-transparent rounded-md border focus:outline-none text-default-400 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
@@ -191,6 +211,7 @@
           <div class="mt-8 md:mt-10 flex justify-end">
             <button
               type="submit"
+              @click="sendEmail"
               class="flex items-center rounded-md hover:text-warning bg-primary/90 px-6 py-2 text-white transition-all hover:bg-primary"
             >
               Send Messages
@@ -213,11 +234,110 @@
           </div>
         </div>
       </form>
+
+      <div
+        v-if="modal"
+        class="z-40 min-h-full fixed w-full bg-[#000] bg-opacity-70 overflow-y-auto inset-0 outline-none focus:outline-none modal"
+      >
+        <!--  -->
+        <div
+          class="bg-white w-full sm:w-[600px] mx-auto mt-20 md:mt-40 relative p-5 pb-5 md:pb-20 rounded-lg px-5"
+        >
+          <div class="flex justify-end">
+            <button
+              @click="closeModal"
+              id="closeThanks"
+              class="cursor-pointer px-3 py-2 bg-primary rounded-full text-white hover:bg-indigo"
+            >
+              ✕
+            </button>
+          </div>
+          <div
+            class="flex flex-col mt-10 gap-5 items-center justify-center w-full"
+          >
+            <div class="mx-auto">
+              <img src="/images/happy.png" class="h-40 w-60" alt="" />
+            </div>
+
+            <div>
+              <h2
+                class="md:text-xl xl:text-3xl font-bold text-center text-secondary"
+              >
+                Message Sent Successfully !
+              </h2>
+              <p
+                class="text-center text-base md:text-base xl:text-lg mt-2 md:mt-4"
+              >
+                we are happy to hear from you, we will get back <br />
+                to you shortly.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import emailjs from "@emailjs/browser";
+import { ref } from "vue";
+
+const loading = ref(false);
+const modal = ref(false);
+const msg = ref("");
+
+const closeModal = () => {
+  this.modal = false;
+};
+
+const sendEmail = () => {
+  loading.value = true;
+
+  if (this.$refs.form) {
+    // Perform manual validation for required inputs
+    const formElements = this.$refs.form.elements;
+    let valid = true;
+
+    for (let i = 0; i < formElements.length; i++) {
+      const element = formElements[i];
+      if (element.hasAttribute("required") && !element.value) {
+        valid = false;
+        // Optionally, add a class to highlight the missing input
+        element.classList.add("error");
+      } else {
+        // Remove error class if input is filled
+        element.classList.remove("error");
+      }
+    }
+
+    if (!valid) {
+      msg.value = "Please fill in all required fields.";
+      loading.value = false;
+      return;
+    }
+    emailjs
+      .sendForm("service_cdz49mc", "template_82uk87f", this.$refs.form, {
+        publicKey: "Ff58OYBX0qhrsWE9U",
+      })
+      .then(
+        () => {
+          modal.value = true;
+          this.$refs.form.reset();
+          loading.value = false;
+        },
+        (error) => {
+          this.$refs.form.reset();
+          console.log("FAILED...", error.text, {
+            timeout: 2000,
+          });
+          console.log("FAILED...", error.text);
+          loading.value = false;
+        }
+      );
+  }
+};
+</script>
 
 <style scoped>
 .card {

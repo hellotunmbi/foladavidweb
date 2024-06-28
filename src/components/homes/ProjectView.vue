@@ -29,7 +29,7 @@
         >
           <div class="group relative h-full md:h-[600px]">
             <img
-              src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1718809951/draw-1_yxjfif.png"
+              src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1719602351/Official_GWR_1080X1350_zqpmqn.png"
               class="h-full w-full rounded-xl"
               alt=""
             />
@@ -37,14 +37,14 @@
           <div>
             <div class="group relative h-full md:h-[500px]">
               <img
-                src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1718810313/rep-1_l0be2q.png"
+                src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1719602358/RepuTribe_1080X1350-1_qv2fd4.png"
                 class="h-full w-full rounded-xl"
                 alt=""
               />
             </div>
             <div class="group relative mt-5 h-full md:h-[500px]">
               <img
-                src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1718810362/unity-md_epuci8.png"
+                src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1719602355/Unity_in_Diversity_1080x1350-1_xeqz6g.png"
                 class="h-full w-full rounded-xl"
                 alt=""
               />

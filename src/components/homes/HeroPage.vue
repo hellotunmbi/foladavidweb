@@ -72,7 +72,16 @@
           <SwiperSlide>
             <div class="">
               <img
-                src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1718809953/img-3_ehucvz.jpg"
+                src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1719529146/imm_tqcmnt.jpg"
+                alt=""
+                class="h-[700px] 2xl:h-[1000px] bg-contain object-scale-down w-full"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div class="">
+              <img
+                src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1719527909/IMG_4427_wxptno.jpg"
                 alt=""
                 class="h-[700px] 2xl:h-[1000px] bg-contain object-scale-down w-full"
               />
@@ -90,7 +99,16 @@
           <SwiperSlide>
             <div class="">
               <img
-                src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1718809960/img-4_ak3jdt.jpg"
+                src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1719527909/IMG_3634_dubryo.jpg"
+                alt=""
+                class="h-[700px] 2xl:h-[1000px] bg-contain object-scale-down w-full"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div class="">
+              <img
+                src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1719529146/imgg_yqip5o.jpg"
                 alt=""
                 class="h-[700px] 2xl:h-[1000px] bg-contain object-scale-down w-full"
               />

@@ -56,7 +56,7 @@
       <div class="flex flex-col md:flex-row justify-center items-center gap-10">
         <div class="h-[50%] w-full">
           <img
-            src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1718809944/draw-2_nsceuj.png"
+            src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1719602351/Official_GWR_1080X566_dqydxm.png"
             class="object-cover rounded-lg"
             alt=""
           />
@@ -88,7 +88,7 @@
         </div>
         <div class="h-[50%] w-full order-1 md:order-2">
           <img
-            src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1718810353/unity-lg_s3ueoz.png"
+            src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1719602353/Unity_in_Diversity_1080x566-1_t4i4du.png"
             class="object-cover rounded-lg"
             alt=""
           />
@@ -102,7 +102,7 @@
       >
         <div class="h-[50%] w-full">
           <img
-            src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1718810323/rep-2_l10itn.png"
+            src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1719602353/RepuTribe_1080x566-1_yr08tr.png"
             class="object-cover rounded-lg"
             alt=""
           />

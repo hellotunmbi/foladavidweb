@@ -198,6 +198,7 @@ import {
   InstagramIcon,
   TwitterIcon,
   LinkedinIcon,
+  TiktokIcon,
 } from "lucide-vue-next";
 
 const year = new Date().getFullYear();
