@@ -3,12 +3,12 @@
 @import url("https://fonts.googleapis.com/css2?family=REM:wght@200;300;400;500;600;700&display=swap");
 
 html {
-  @apply relative scroll-smooth;
+  @apply relative scroll-smooth bg-[#052036];
 }
 
 body {
   font-size: 18px;
-  @apply overflow-x-hidden bg-gradient-to-r from-[#181630] via-[#032136] to-[#181630] font-body font-normal text-default-700 antialiased;
+  @apply overflow-x-hidden  bg-gradient-to-r from-[#181630] via-[#032136] to-[#181630] font-body font-normal text-default-700 antialiased;
   scroll-behavior: smooth;
 }
 

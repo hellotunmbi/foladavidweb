@@ -9,28 +9,58 @@
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
-      <div v-for="(img, idx) in images" :key="idx">
+      <div v-for="(img, idx) in images" :key="idx" class="relative">
         <div v-if="loading">
           <SkeletonCard />
 
           loading
         </div>
 
-        <div v-else class="w-full md:h-[300px] relative hover:cursor-pointer">
+        <div
+          v-else
+          class="w-full md:h-[300px] relative animate__animated animate__zoomIn"
+        >
           <img
             :src="img"
             alt=""
             class="w-full md:h-[300px] object-cover bg-cover rounded-lg"
           />
+
+          <div
+            class="absolute z-50 inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity"
+          >
+            <button
+              @click="() => showImg(index)"
+              class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors"
+            >
+              View
+            </button>
+          </div>
         </div>
       </div>
     </div>
+
+    <vue-easy-lightbox
+      :visible="visibleRef"
+      :imgs="images"
+      :index="indexRef"
+      @hide="onHide"
+    ></vue-easy-lightbox>
   </div>
 </template>
 
 <script setup lang="ts">
 import SkeletonCard from "@/layout/partials/SkeletonCard.vue";
 import { ref, onMounted } from "vue";
+
+const visibleRef = ref(false);
+const indexRef = ref(0);
+
+const showImg = (index) => {
+  indexRef.value = index;
+  visibleRef.value = true;
+};
+const onHide = () => (visibleRef.value = false);
 
 const medias = ref([
   {

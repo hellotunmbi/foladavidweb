@@ -7,14 +7,20 @@
         class="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-32"
       >
         <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-          <h2 class="text-3xl font-bold tracking-tight text-white">
+          <h2
+            class="text-3xl font-bold tracking-tight text-white animate__animated animate__fadeInUp"
+          >
             Contact Us
           </h2>
-          <p class="mt-6 text-lg leading-8 text-default-800">
+          <p
+            class="mt-6 text-lg leading-8 text-default-800 animate__animated animate__fadeInUp animate__delay-2s"
+          >
             Feel free to reach out to us for any inquiries or assistance. We're
             here to help!
           </p>
-          <dl class="mt-10 space-y-8 text-base leading-7 text-gray-600">
+          <dl
+            class="mt-10 space-y-8 text-base leading-7 text-gray-600 animate__animated animate__fadeInUp animate__delay-2s"
+          >
             <div class="flex gap-x-4">
               <dt class="flex-none">
                 <span class="sr-only">Email</span>
@@ -42,7 +48,9 @@
                 >
               </dd>
             </div>
-            <div class="flex gap-x-4">
+            <div
+              class="flex gap-x-4 animate__animated animate__fadeInUp animate__delay-2s"
+            >
               <dt class="flex-none">
                 <span class="sr-only">phone</span>
                 <svg
@@ -68,7 +76,9 @@
               >
             </div>
             <div class="flex items-center gap-5">
-              <div class="cursor-pointer max-h-[52px] max-w-[52px]">
+              <div
+                class="cursor-pointer max-h-[52px] max-w-[52px] animate__animated animate__fadeInLeft animate__delay-1s"
+              >
                 <a
                   href="https://x.com/foladavidart"
                   target="_blank"
@@ -80,7 +90,9 @@
                 /></a>
               </div>
 
-              <div class="cursor-pointer max-h-[45px] max-w-[45px]">
+              <div
+                class="cursor-pointer max-h-[45px] max-w-[45px] animate__animated animate__fadeInLeft animate__delay-2s"
+              >
                 <a
                   href="https://www.facebook.com/profile.php?id=1378806367&mibextid=LQQJ4d"
                   target="_blank"
@@ -92,7 +104,9 @@
                 /></a>
               </div>
 
-              <div class="cursor-pointer max-h-[40px] max-w-[40px]">
+              <div
+                class="cursor-pointer max-h-[40px] max-w-[40px] animate__animated animate__fadeInLeft animate__delay-3s"
+              >
                 <a
                   href="https://www.linkedin.com/in/dradefemifoladavid"
                   target="_blank"
@@ -103,7 +117,9 @@
                     alt="linkedin"
                 /></a>
               </div>
-              <div class="cursor-pointer max-h-[55px] max-w-[55px]">
+              <div
+                class="cursor-pointer max-h-[55px] max-w-[55px] animate__animated animate__fadeInLeft animate__delay-4s"
+              >
                 <a
                   href="https://www.instagram.com/foladavid"
                   target="_blank"
@@ -114,7 +130,9 @@
                     alt="instagram"
                 /></a>
               </div>
-              <div class="cursor-pointer max-h-[55px] max-w-[55px]">
+              <div
+                class="cursor-pointer max-h-[55px] max-w-[55px] animate__animated animate__fadeInLeft animate__delay-5s"
+              >
                 <a
                   href="https://www.tiktok.com/@foladavid"
                   target="_blank"
@@ -136,7 +154,9 @@
         class="px-6 pb-24 pt-10 sm:pb-32 lg:px-8 lg:py-32 card"
       >
         <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
-          <h3 class="text-warning text-2xl font-bold">
+          <h3
+            class="text-warning text-2xl font-bold animate__animated animate__fadeInUp"
+          >
             We welcome your feedback
           </h3>
           <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 mt-10">
@@ -202,7 +222,7 @@
                   required
                   id="message"
                   rows="4"
-                  class="block w-full bg-transparent rounded-md border focus:outline-none text-default-400 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
+                  class="block w-full bg-transparent rounded-md border focus:outline-none text-default-800 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
                   name="message"
                 ></textarea>
               </div>
@@ -256,17 +276,17 @@
             class="flex flex-col mt-10 gap-5 items-center justify-center w-full"
           >
             <div class="mx-auto">
-              <img src="/images/happy.png" class="h-40 w-60" alt="" />
+              <img src="@/assets/images/happy.png" class="h-40 w-60" alt="" />
             </div>
 
             <div>
               <h2
-                class="md:text-xl xl:text-3xl font-bold text-center text-secondary"
+                class="md:text-xl xl:text-3xl font-bold text-center text-default-200"
               >
                 Message Sent Successfully !
               </h2>
               <p
-                class="text-center text-base md:text-base xl:text-lg mt-2 md:mt-4"
+                class="text-center text-default-400 text-base md:text-base xl:text-lg mt-2 md:mt-4"
               >
                 we are happy to hear from you, we will get back <br />
                 to you shortly.
@@ -284,22 +304,23 @@ import emailjs from "@emailjs/browser";
 import { ref } from "vue";
 
 const loading = ref(false);
-const modal = ref(false);
+const modal = ref(true);
 const msg = ref("");
+const form: any = ref();
 
 const closeModal = () => {
-  this.modal = false;
+  modal.value = false;
 };
 
 const sendEmail = () => {
   loading.value = true;
 
-  if (this.$refs.form) {
+  if (form.value) {
     // Perform manual validation for required inputs
-    const formElements = this.$refs.form.elements;
+    const formElements = form.value;
     let valid = true;
 
-    for (let i = 0; i < formElements.length; i++) {
+    for (let i = 0; i < form.value.length; i++) {
       const element = formElements[i];
       if (element.hasAttribute("required") && !element.value) {
         valid = false;
@@ -317,17 +338,17 @@ const sendEmail = () => {
       return;
     }
     emailjs
-      .sendForm("service_cdz49mc", "template_82uk87f", this.$refs.form, {
-        publicKey: "Ff58OYBX0qhrsWE9U",
+      .sendForm("service_8pltnl4", "template_hqawoul", form.value, {
+        publicKey: "bHVVvPwyPPun3KWyc",
       })
       .then(
         () => {
           modal.value = true;
-          this.$refs.form.reset();
+          form.value.reset();
           loading.value = false;
         },
         (error) => {
-          this.$refs.form.reset();
+          form.value.reset();
           console.log("FAILED...", error.text, {
             timeout: 2000,
           });

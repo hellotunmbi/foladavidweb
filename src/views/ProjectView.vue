@@ -54,14 +54,18 @@
 
     <section class="mt-20 md:mt-40">
       <div class="flex flex-col md:flex-row justify-center items-center gap-10">
-        <div class="h-[50%] w-full">
+        <div
+          class="h-[50%] w-full animate__animated animate__fadeInLeft animate__delay-1s"
+        >
           <img
             src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1719602351/Official_GWR_1080X566_dqydxm.png"
             class="object-cover rounded-lg"
             alt=""
           />
         </div>
-        <div class="w-full">
+        <div
+          class="w-full animate__animated animate__fadeInRight animate__delay-2s"
+        >
           <h3 class="text-2xl text-warning uppercase">World record attempt</h3>
           <p class="pt-4">
             <span class="font-bold text-xl"> A Canvas of Diversity</span>
@@ -77,7 +81,9 @@
     <!--  -->
     <section class="mt-10 md:mt-20">
       <div class="flex flex-col md:flex-row justify-center items-center gap-10">
-        <div class="w-full order-2 md:order-1">
+        <div
+          class="w-full order-2 md:order-1 animate__animated animate__fadeInLeft animate__delay-3s"
+        >
           <h3 class="text-2xl text-warning uppercase">Road to Record</h3>
           <p class="pt-4">
             <span class="font-bold text-xl"> A Cultural Odyssey </span>
@@ -86,7 +92,9 @@
             ethnic-nationalities and tribes.
           </p>
         </div>
-        <div class="h-[50%] w-full order-1 md:order-2">
+        <div
+          class="h-[50%] w-full order-1 md:order-2 animate__animated animate__fadeInRight animate__delay-4s"
+        >
           <img
             src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1719602353/Unity_in_Diversity_1080x566-1_t4i4du.png"
             class="object-cover rounded-lg"
@@ -100,14 +108,18 @@
       <div
         class="flex flex-col md:flex-row justify-center items-center gap-10 mt-5"
       >
-        <div class="h-[50%] w-full">
+        <div
+          class="h-[50%] w-full animate__animated animate__fadeInLeft animate__delay-5s"
+        >
           <img
             src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1719602353/RepuTribe_1080x566-1_yr08tr.png"
             class="object-cover rounded-lg"
             alt=""
           />
         </div>
-        <div class="w-full">
+        <div
+          class="w-full animate__animated animate__fadeInRight animate__delay-5s"
+        >
           <h3 class="text-2xl text-warning uppercase">
             Rep Your Tribe Carnival
           </h3>

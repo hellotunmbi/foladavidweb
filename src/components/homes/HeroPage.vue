@@ -6,7 +6,7 @@
       <div class="w-full order-2 md:order-1">
         <div class="px-5 md:pl-20 space-y-5 2xl:space-y-10">
           <h1
-            class="animate__animated capitalize animate__fadeInUp text-[32px] sm:text-[40px] 2xl:text-[60px] text-white font-extrabold leading-snug"
+            class="animate__animated animate__fadeInUp capitalize text-[32px] sm:text-[40px] 2xl:text-[60px] text-white font-extrabold leading-snug"
           >
             Welcome to the Unity in Diversity Project!
           </h1>
@@ -51,7 +51,9 @@
           </div>
         </div>
       </div>
-      <div class="w-full md:w-[50%] max-h-[50%] order-2">
+      <div
+        class="w-full animate__animated animate__fadeInLeft md:w-[50%] max-h-[50%] order-2"
+      >
         <Swiper
           class="mySwiper"
           :modules="[Navigation, Thumbs, FreeMode, Autoplay]"
@@ -69,15 +71,7 @@
               />
             </div>
           </SwiperSlide>
-          <SwiperSlide>
-            <div class="">
-              <img
-                src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1719529146/imm_tqcmnt.jpg"
-                alt=""
-                class="h-[700px] 2xl:h-[1000px] bg-contain object-scale-down w-full"
-              />
-            </div>
-          </SwiperSlide>
+
           <SwiperSlide>
             <div class="">
               <img

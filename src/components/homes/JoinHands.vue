@@ -2,7 +2,9 @@
   <section class="lg:py-20 py-10 bg-default-800">
     <div class="container">
       <div class="flex items-end justify-between mb-10">
-        <div class="max-w-2xl mx-auto text-center">
+        <div
+          class="max-w-2xl mx-auto text-center animate__animated animate__fadeInUp animate__delay-1s"
+        >
           <span
             class="text-4xl lg:text-5xl font-medium capitalize text-default-50 my-4"
             >Get Involved</span
@@ -13,7 +15,9 @@
         </div>
       </div>
       <div class="grid lg:grid-cols-2 grid-cols-1 gap-6 items-center">
-        <div class="relative overflow-hidden">
+        <div
+          class="relative overflow-hidden animate__animated animate__fadeInLeft animate__delay-2s"
+        >
           <img
             src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1718809947/hands_moz0nr.jpg"
             class="rounded-md h-full md:h-[600px] object-cover w-full"
@@ -21,7 +25,9 @@
           />
           <div class="absolute inset-0 rounded-md bg-black/40"></div>
         </div>
-        <div class="lg:-ms-20 z-10">
+        <div
+          class="lg:-ms-20 z-10 animate__animated animate__fadeInRight animate__delay-2s"
+        >
           <div
             class="divide-y divide-default-800 bg-default-500 rounded-md shadow"
           >

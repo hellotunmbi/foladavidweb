@@ -4,7 +4,9 @@
       <div
         class="grid md:grid-cols-2 grid-cols-1 gap-x-16 gap-y-10 items-center pb-10 md:pb-20"
       >
-        <div class="rounded-lg h-[80%] w-full mt-5">
+        <div
+          class="rounded-lg h-[80%] w-full mt-5 animate__animated animate__fadeInLeft animate__delay-1s"
+        >
           <img
             src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1718809961/img-6_fjfccz.jpg"
             alt=""
@@ -13,24 +15,30 @@
         </div>
 
         <div class="space-y-8">
-          <h2 class="text-3xl pb-3 text-warning font-medium">
+          <h2
+            class="text-3xl pb-3 text-warning font-medium animate__animated animate__fadeInUp animate__delay-2s"
+          >
             The Unity in Diversity Project
           </h2>
-          <span class="text-sm 2xl:text-base">
+          <p
+            class="text-sm 2xl:text-base animate__animated animate__fadeInRight animate__delay-2s"
+          >
             Dr. Foladavid, medical doctor, visual artist, and humanitarian in
             collaboration with Tolaram Group, proudly unveils "The Unity in
             Diversity Project." This groundbreaking intiative is set to
             illuminate Nigeria's vibrant cultural mosaic through an immersive
             journey spanning visual art, documentary and cultural celebration.
-          </span>
+          </p>
 
-          <div>
+          <div class="animate__animated animate__fadeInRight animate__delay-3s">
             <p class="text-base text-default-700 font-semibold">
               The project unfolds in three compelling phases:
             </p>
           </div>
 
-          <div class="space-y-6">
+          <div
+            class="space-y-6 animate__animated animate__fadeInRight animate__delay-4s"
+          >
             <div>
               <p class="text-lg text-warning font-bold">Road to Record</p>
               <p>
@@ -94,7 +102,7 @@
 
         <div class="flex flex-col md:flex-row w-full">
           <div
-            class="py-10 rounded-tl-3xl md:rounded-bl-3xl md:py-20 px-10 bg-slate-300 bg-secondary w-full animate__animated animate__fadeInLeft animate__delay-1s"
+            class="py-10 rounded-tl-3xl md:rounded-bl-3xl md:py-20 px-10 bg-slate-300 bg-secondary w-full"
           >
             <div class="w-full md:px-20 mx-auto">
               <h4 class="text-black font-bold text-xl">Mission Statement:</h4>
@@ -113,9 +121,7 @@
           <div
             class="py-10 md:py-20 px-10 bg-black w-ful rounded-br-3xl md:rounded-tr-3xl"
           >
-            <div
-              class="w-full md:px-20 mx-auto animate__animated animate__fadeInRight animate__delay-1s"
-            >
+            <div class="w-full md:px-20 mx-auto">
               <h4 class="text-white font-bold text-xl">Vision:</h4>
               <span
                 class="block border-t-4 border-secondary text-center w-[120px] mt-3 pb-10"
@@ -133,7 +139,9 @@
       <section
         class="mt-10 md:my-20 px-5 md:px-20 py-10 md:py-20 rounded-3xl bg-gradient-to-r from-[#38336b96] via-[#0b3451b7] to-[#38336b96]"
       >
-        <h2 class="text-3xl md:text-4xl text-center font-medium">
+        <h2
+          class="text-3xl md:text-4xl text-center font-medium animate__animated animate__fadeInUp animate__delay-1s"
+        >
           Fola David Care Foundation
         </h2>
 
@@ -146,7 +154,9 @@
             rel="noopener noreferrer"
             class="h-full lg:h-[600px] w-full rounded-lg"
           >
-            <div>
+            <div
+              class="animate__animated animate__fadeInLeft animate__delay-1s"
+            >
               <img
                 src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1718884478/foundation_jacd9b.jpg"
                 class="h-full lg:h-[600px] w-full rounded-lg object-cover hover:bg-black hover:opacity-80 object-top"
@@ -155,7 +165,9 @@
             </div>
           </a>
 
-          <div class="w-full">
+          <div
+            class="w-full animate__animated animate__fadeInRight animate__delay-1s"
+          >
             <h3 class="text-warning text-xl md:text-2xl pb-5">
               Passion To Make A Difference
             </h3>

@@ -1,7 +1,7 @@
 /* // Gallery Page */
 
 .filter-options a {
-  @apply rounded-md border border-default-200 bg-white px-5 py-2 font-medium text-default-900 transition-all duration-500 dark:bg-default-50;
+  @apply rounded-md border border-default-200 bg-black px-5 py-2 font-medium text-default-900 transition-all duration-500 dark:bg-default-50;
 }
 
 .filter-options a:hover,
