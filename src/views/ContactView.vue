@@ -304,7 +304,7 @@ import emailjs from "@emailjs/browser";
 import { ref } from "vue";
 
 const loading = ref(false);
-const modal = ref(true);
+const modal = ref(false);
 const msg = ref("");
 const form: any = ref();
 
