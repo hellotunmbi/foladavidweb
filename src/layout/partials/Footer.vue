@@ -80,24 +80,6 @@
                 </h5>
                 <div class="space-y-3">
                   <a
-                    href="https://www.facebook.com/profile.php?id=1378806367&mibextid=LQQJ4d"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="flex items-center gap-5 group"
-                  >
-                    <div
-                      class="h-10 w-10 inline-flex items-center justify-center border border-default-300 text-default-800 rounded-lg transition-all group-hover:bg-primary group-hover:text-white group-hover:border-primary-300"
-                    >
-                      <FacebookIcon class="h-5 w-5" />
-                    </div>
-                    <h5
-                      class="text-base hover:text-warning-300 font-medium text-default-800"
-                    >
-                      Facebook
-                    </h5>
-                  </a>
-
-                  <a
                     href="https://www.instagram.com/foladavid"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -112,6 +94,23 @@
                       class="text-base hover:text-warning-300 font-medium text-default-800"
                     >
                       Instagram
+                    </h5>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=1378806367&mibextid=LQQJ4d"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center gap-5 group"
+                  >
+                    <div
+                      class="h-10 w-10 inline-flex items-center justify-center border border-default-300 text-default-800 rounded-lg transition-all group-hover:bg-primary group-hover:text-white group-hover:border-primary-300"
+                    >
+                      <FacebookIcon class="h-5 w-5" />
+                    </div>
+                    <h5
+                      class="text-base hover:text-warning-300 font-medium text-default-800"
+                    >
+                      Facebook
                     </h5>
                   </a>
 

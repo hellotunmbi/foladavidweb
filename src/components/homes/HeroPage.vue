@@ -1,9 +1,9 @@
 <template>
   <section
-    class="mt-[100px] max-h-full bg-cover bg-no-repeat bg-[url('../images/other/bg-lines-1.svg')] mb-5"
+    class="mt-[20px] md:mt-[100px] max-h-full bg-cover bg-no-repeat bg-[url('../images/other/bg-lines-1.svg')] mb-5"
   >
-    <div class="flex flex-col md:flex-row items-center gap-5">
-      <div class="w-full order-2 md:order-1">
+    <div class="flex flex-col md:flex-row gap-5">
+      <div class="w-full order-2 md:order-1 mt-20">
         <div class="px-5 md:pl-20 space-y-5 2xl:space-y-10">
           <h1
             class="animate__animated animate__fadeInUp capitalize text-[32px] sm:text-[40px] 2xl:text-[60px] text-white font-extrabold leading-snug"
@@ -37,7 +37,9 @@
                 id="tribe"
                 class="w-full bg-transparent border hover:text-primary-300 border-primary-50 py-2 md:py-3 rounded-md flex justify-between items-center px-3 over:cursor-pointer"
               >
-                <option value="" disabled selected>Select your tribe</option>
+                <option value="" disabled selected>
+                  Select your tribe, Generate your custom dp for free
+                </option>
                 <option value="https://getdp.co/Xyi">Fulani</option>
                 <option value="https://getdp.co/XyV">Hausa</option>
                 <option value="https://getdp.co/Xyq">Yoruba</option>
@@ -48,6 +50,10 @@
                 <option value="https://getdp.co/XyL">Tiv</option>
               </select>
             </div>
+          </div>
+
+          <div class="pt-10 md:pt-20">
+            <CountDown />
           </div>
         </div>
       </div>
@@ -117,6 +123,7 @@
 <script setup lang="ts">
 import Popper from "vue3-popper";
 import { ArrowUpRightIcon } from "lucide-vue-next";
+import CountDown from "@/components/CountDown.vue";
 // import { tribes } from "@/utilities/tribes";
 
 import { Swiper, SwiperSlide } from "swiper/vue";

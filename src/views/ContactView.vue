@@ -70,12 +70,26 @@
                 </svg>
               </dt>
               <a href="tel:+234 813 190 6738"></a>
-              <dd class="text-default-800">08131906738,</dd>
+              <dd class="text-default-800">(+234) 813 190 6738,</dd>
               <a href="tel:+234 701 374 9934">
-                <dd class="text-default-800">07013749934</dd></a
+                <dd class="text-default-800">(+234) 701 374 9934</dd></a
               >
             </div>
             <div class="flex items-center gap-5">
+              <div
+                class="cursor-pointer max-h-[55px] max-w-[55px] animate__animated animate__fadeInLeft animate__delay-4s"
+              >
+                <a
+                  href="https://www.instagram.com/foladavid"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img
+                    src="@/assets/icons/instagram.png"
+                    class="object-cover hover:scale-125 transition ease-in-out"
+                    alt="instagram"
+                    title="Instagram"
+                /></a>
+              </div>
               <div
                 class="cursor-pointer max-h-[52px] max-w-[52px] animate__animated animate__fadeInLeft animate__delay-1s"
               >
@@ -87,6 +101,7 @@
                     src="@/assets/icons/twitter.png"
                     class="object-cover hover:scale-125 transition ease-in-out"
                     alt="twitter"
+                    title="Twitter"
                 /></a>
               </div>
 
@@ -101,6 +116,22 @@
                     src="@/assets/icons/facebook.svg"
                     class="object-cover hover:scale-125 transition ease-in-out"
                     alt="facebook"
+                    title="facebook"
+                /></a>
+              </div>
+
+              <div
+                class="cursor-pointer max-h-[45px] max-w-[45px] animate__animated animate__fadeInLeft animate__delay-5s"
+              >
+                <a
+                  href="https://www.tiktok.com/@foladavid"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img
+                    src="@/assets/icons/tiktok.png"
+                    class="object-cover hover:scale-125 transition ease-in-out"
+                    alt="tiktok"
+                    title="Tiktok"
                 /></a>
               </div>
 
@@ -115,32 +146,7 @@
                     src="@/assets/icons/linkedin.svg"
                     class="object-cover hover:scale-125 transition ease-in-out"
                     alt="linkedin"
-                /></a>
-              </div>
-              <div
-                class="cursor-pointer max-h-[55px] max-w-[55px] animate__animated animate__fadeInLeft animate__delay-4s"
-              >
-                <a
-                  href="https://www.instagram.com/foladavid"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img
-                    src="@/assets/icons/instagram.png"
-                    class="object-cover hover:scale-125 transition ease-in-out"
-                    alt="instagram"
-                /></a>
-              </div>
-              <div
-                class="cursor-pointer max-h-[55px] max-w-[55px] animate__animated animate__fadeInLeft animate__delay-5s"
-              >
-                <a
-                  href="https://www.tiktok.com/@foladavid"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img
-                    src="@/assets/icons/tiktok.png"
-                    class="object-cover hover:scale-125 transition ease-in-out"
-                    alt="tiktok"
+                    title="Linkedin"
                 /></a>
               </div>
             </div>

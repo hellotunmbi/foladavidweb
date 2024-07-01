@@ -20,7 +20,9 @@
           id="tribe"
           class="mx-auto bg-transparent w-[700px] border hover:text-primary-300 border-primary-50 py-2 md:py-3 rounded-md flex justify-between items-center px-3 over:cursor-pointer"
         >
-          <option value="" disabled selected>Select your tribe</option>
+          <option value="" disabled selected>
+            Select your tribe, Generate your custom dp for free
+          </option>
           <option value="https://getdp.co/Xyi">Fulani</option>
           <option value="https://getdp.co/XyV">Hausa</option>
           <option value="https://getdp.co/Xyq">Yoruba</option>

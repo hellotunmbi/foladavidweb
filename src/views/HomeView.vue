@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Hero -->
-    <div class="mt-20">
+    <div class="mt-10 md:mt-20">
       <HeroPage />
     </div>
     <!-- media -->

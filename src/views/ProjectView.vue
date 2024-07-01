@@ -154,7 +154,9 @@
                 <circle cx="9" cy="9" r="2"></circle>
                 <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg
             ></span>
-            <span class="text-xs sm:text-sm">Generate photo</span>
+            <span class="text-xs sm:text-sm"
+              >Generate your custom dp for free</span
+            >
           </div>
         </div>
       </div>
