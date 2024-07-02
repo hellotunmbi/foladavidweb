@@ -9,7 +9,7 @@
           >
           <a target="_blank" href="https://en.wikipedia.org/wiki/Tolaram_Group">
             <div
-              class="font-medium capitalize h-[70px] md:h-[100px] text-white mt-4"
+              class="font-medium capitalize h-[50px] md:h-[100px] text-white mt-4"
             >
               <img
                 src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1718808717/sponsor_qgwqqp.png"

@@ -2,50 +2,106 @@
   <div class="py-20 container2">
     <div>
       <h3
-        class="py-10 md:py-20 text-2xl md:text-3xl text-center uppercase text-warning"
+        class="py-10 pb-5 md:pt-20 text-2xl md:text-3xl text-center uppercase text-warning"
       >
         media and Gallery
       </h3>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
-      <div v-for="(img, idx) in images" :key="idx" class="relative">
-        <div v-if="loading">
-          <SkeletonCard />
-
-          loading
-        </div>
-
-        <div
-          v-else
-          class="w-full md:h-[300px] relative animate__animated animate__zoomIn"
+    <div class="flex items-center gap-5 py-6">
+      <div>
+        <button
+          @click="tabs(1)"
+          class="text-primary bg-white px-5 py-1.5 rounded-xl hover:bg-warning hover:text-white"
+          :class="active == 1 ? 'bg-warning text-white' : ''"
         >
-          <img
-            :src="img"
-            alt=""
-            class="w-full md:h-[300px] object-cover bg-cover rounded-lg"
-          />
-
-          <div
-            class="absolute z-50 inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity"
-          >
-            <button
-              @click="() => showImg(index)"
-              class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors"
-            >
-              View
-            </button>
-          </div>
-        </div>
+          Tab 1
+        </button>
+      </div>
+      <div>
+        <button
+          @click="tabs(2)"
+          class="text-primary bg-white px-5 py-1.5 rounded-xl hover:bg-warning hover:text-white"
+          :class="active == 2 ? 'bg-warning text-white' : ''"
+        >
+          Tab 2
+        </button>
+      </div>
+      <div>
+        <button
+          @click="tabs(3)"
+          class="text-primary bg-white px-5 py-1.5 rounded-xl hover:bg-warning hover:text-white"
+          :class="active === 3 ? 'bg-warning text-white' : ''"
+        >
+          Tab 3
+        </button>
+      </div>
+      <div>
+        <button
+          @click="tabs(4)"
+          class="text-primary bg-white px-5 py-1.5 rounded-xl hover:bg-warning hover:text-white"
+          :class="active == 4 ? 'bg-warning text-white' : ''"
+        >
+          Tab 4
+        </button>
+      </div>
+      <div>
+        <button
+          @click="tabs(5)"
+          class="text-primary bg-white px-5 py-1.5 rounded-xl hover:bg-warning hover:text-white"
+          :class="active == 5 ? 'bg-warning text-white' : ''"
+        >
+          Tab 5
+        </button>
       </div>
     </div>
 
-    <vue-easy-lightbox
-      :visible="visibleRef"
-      :imgs="images"
-      :index="indexRef"
-      @hide="onHide"
-    ></vue-easy-lightbox>
+    <div v-if="tab === 1">
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
+        <div v-for="(img, idx) in images" :key="idx" class="relative">
+          <div v-if="loading">
+            <SkeletonCard />
+
+            loading
+          </div>
+
+          <div
+            v-else
+            class="w-full md:h-[300px] relative animate__animated animate__zoomIn"
+          >
+            <img
+              :src="img"
+              alt=""
+              class="w-full md:h-[300px] object-cover bg-cover rounded-lg"
+            />
+
+            <div
+              class="absolute z-50 inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity"
+            >
+              <button
+                @click="() => showImg(index)"
+                class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors"
+              >
+                View
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <vue-easy-lightbox
+        :visible="visibleRef"
+        :imgs="images"
+        :index="indexRef"
+        @hide="onHide"
+      ></vue-easy-lightbox>
+    </div>
+
+    <!--  -->
+    <div v-if="tab === 2">tab-2</div>
+    <div v-if="tab === 3">tab-3</div>
+    <div v-if="tab === 4">tab-4</div>
+    <div v-if="tab === 5">tab-5</div>
   </div>
 </template>
 
@@ -120,6 +176,8 @@ const medias = ref([
 ]);
 const loading = ref(false);
 const images = ref();
+const tab = ref(1);
+const active = ref(1);
 
 const getAllImages = () => {
   let imgs;
@@ -127,6 +185,11 @@ const getAllImages = () => {
   imgs = medias.value.map((img) => img.url);
   images.value = imgs;
   loading.value = false;
+};
+
+const tabs = (picTab: any) => {
+  tab.value = picTab;
+  active.value = picTab;
 };
 
 onMounted(() => {

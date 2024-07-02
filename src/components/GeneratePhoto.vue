@@ -31,6 +31,13 @@
           <option value="https://getdp.co/XyX">Ijaw</option>
           <option value="https://getdp.co/Xyp">kanuri</option>
           <option value="https://getdp.co/XyL">Tiv</option>
+          <option value="https://getdp.co/XCR">Nupe</option>
+          <option value="https://getdp.co/XD0">Efik</option>
+          <option value="https://getdp.co/XDa">Annang</option>
+          <option value="https://getdp.co/XDu">Igala</option>
+          <option value="https://getdp.co/XD1">Gwari</option>
+          <option value="https://getdp.co/XDS">Jakun</option>
+          <option value="https://getdp.co/XDM">Edo</option>
         </select>
       </div>
     </div>

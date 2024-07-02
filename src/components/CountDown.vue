@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col md:flex-row gap-5">
+  <div class="flex flex-col md:flex-row gap-5 sm:items-center">
     <div>
       <p class="text-sm md:text-base">Event Days:</p>
     </div>
@@ -9,7 +9,7 @@
         <p class="text-center text-sm md:text-base">Days</p>
       </div>
       <div class="border rounded-lg bg-default-500 py-2 w-[70px] md:w-[100px]">
-        <p class="text-2xl lsm:text-4xl text-center">{{ hours }}</p>
+        <p class="text-2xl sm:text-4xl text-center">{{ hours }}</p>
         <p class="text-center text-sm md:text-base">Hours</p>
       </div>
       <div class="border rounded-lg bg-default-500 py-2 w-[70px] md:w-[100px]">
