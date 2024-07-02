@@ -42,7 +42,7 @@ export default defineComponent({
   name: "CountDown",
   setup() {
     const targetDate = new Date();
-    targetDate.setDate(targetDate.getDate() + 16);
+    targetDate.setDate(targetDate.getDate() + 15);
 
     const days = ref(0);
     const hours = ref(0);
