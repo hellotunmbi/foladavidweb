@@ -22,6 +22,7 @@
     <div class="py-10">
       <ProjectView />
     </div>
+    <SponsorView />
 
     <!-- Join hands -->
     <section class="">
@@ -30,7 +31,6 @@
 
     <!--partners  -->
     <section>
-      <SponsorView />
       <MarqueeGroup />
     </section>
   </div>

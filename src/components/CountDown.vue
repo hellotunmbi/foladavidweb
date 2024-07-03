@@ -26,7 +26,7 @@
   <div class="flex flex-col md:flex-row gap-5 mt-5">
     <p class="text-sm md:text-base">Venue:</p>
     <p class="text-base sm:text-xl text-warning">
-      ONIKAN STADIUM, LAGOS ISLAND, LAGOS.
+      Mobolaji Johnson Arena (ONIKAN STADIUM), LAGOS ISLAND, LAGOS.
     </p>
   </div>
   <div class="flex flex-col md:flex-row gap-5 mt-5">

@@ -1,15 +1,15 @@
 <template>
-  <section class="lg:py-20 py-10 bg-default-800">
+  <section class="lg:py-20 py-10">
     <div class="container">
       <div class="flex items-end justify-between mb-10">
         <div
           class="max-w-2xl mx-auto text-center animate__animated animate__fadeInUp animate__delay-1s"
         >
           <span
-            class="text-4xl lg:text-5xl font-medium capitalize text-default-50 my-4"
+            class="text-4xl lg:text-5xl font-medium capitalize text-default-700 my-4"
             >Get Involved</span
           >
-          <p class="text-lg text-default-300 font-medium mt-5">
+          <p class="text-lg text-default-700 font-medium mt-5">
             Be part of our movement.
           </p>
         </div>
@@ -48,6 +48,17 @@
                   Project. We welcome volunteers for various roles, from event
                   coordination to social media promotion.
                 </p>
+
+                <a
+                  href="https://forms.gle/qk396PCqh9RTKDvS7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><p
+                    class="text-primary text-base hover:underline underline-offset-2 underline-primary font-bold"
+                  >
+                    Click here to register
+                  </p></a
+                >
               </div>
             </div>
             <div class="p-6 flex flex-wrap sm:flex-nowrap items-center gap-6">
@@ -64,7 +75,7 @@
                 </h3>
                 <p class="text-base mt-3">
                   Use the hashtag
-                  <span class="font-bold text-primary-900">#RepYourTribe</span>
+                  <span class="font-bold text-warning">#RepYourTribe</span>
                   on social media to share your cultural heritage and join the
                   conversation. Follow us on [social media links] for updates
                   and more.
