@@ -63,10 +63,19 @@
               </li></a
             >
           </ul>
-          <div class="md:hidden"><img src="/icons/menu.svg" alt="" /></div>
+          <div v-if="modal !== true" @click="openNav" class="md:hidden">
+            <img src="/icons/menu.svg" alt="" />
+          </div>
+          <div v-else @click="closeNav" class="md:hidden">
+            <img src="/icons/close.svg" alt="" />
+          </div>
         </nav>
       </div>
     </header>
+
+    <div v-if="modal">
+      <SideNav @close-modal="closeNav" />
+    </div>
 
     <section ref="spacer" class="spacer">
       <router-view />
@@ -75,18 +84,47 @@
     <div
       class="hidden fixed md:flex flex-col gap-5 items-center left-4 bottom-0"
     >
-      <div class="cursor-pointer">
-        <img src="/icons/instagram.svg" alt="instagram" title="Instagram" />
-      </div>
-      <div class="cursor-pointer">
-        <img src="/icons/twitter.svg" alt="twitter" title="Twitter" />
-      </div>
-      <div class="cursor-pointer">
-        <img src="/icons/linkedin.svg" alt="linkedin" title="Linkedin" />
-      </div>
-      <div class="cursor-pointer">
-        <img src="/icons/facebook.svg" alt="facebook" title="Facebook" />
-      </div>
+      <a
+        href="https://www.instagram.com/foladavid"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div
+          class="cursor-pointer animate__animated animate__fadeInUp animate__faster animate__delay-4s"
+        >
+          <img
+            src="/icons/instagram.svg"
+            alt="instagram"
+            title="Instagram"
+          /></div
+      ></a>
+      <a
+        href="https://x.com/foladavidart"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><div
+          class="cursor-pointer animate__animated animate__fadeInUp animate__faster animate__delay-3s"
+        >
+          <img src="/icons/twitter.svg" alt="twitter" title="Twitter" /></div
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/dradefemifoladavid"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div
+          class="cursor-pointer animate__animated animate__fadeInUp animate__faster animate__delay-2s"
+        >
+          <img src="/icons/linkedin.svg" alt="linkedin" title="Linkedin" /></div
+      ></a>
+      <a
+        href="https://www.facebook.com/profile.php?id=1378806367&mibextid=LQQJ4d"
+      >
+        <div
+          class="cursor-pointer animate__animated animate__fadeInUp animate__faster"
+        >
+          <img src="/icons/facebook.svg" alt="facebook" title="Facebook" /></div
+      ></a>
       <div class="border-l-[0.5px] h-[30px]"></div>
     </div>
 
@@ -108,13 +146,16 @@
 
 <script>
 import { ref, onMounted, onUnmounted } from "vue";
+import SideNav from "@/components/SideNav.vue";
 
 export default {
+  components: { SideNav },
   setup() {
     let isButtonVisible = ref(false);
     const header = ref(null);
     const spacer = ref(null);
     const isScrolled = ref(false);
+    const modal = ref(false);
     const active = ref("");
     let observer = null;
 
@@ -154,6 +195,13 @@ export default {
       }
     });
 
+    const openNav = () => {
+      modal.value = true;
+    };
+    const closeNav = () => {
+      modal.value = false;
+    };
+
     onUnmounted(() => {
       if (observer && spacer.value) {
         observer.unobserve(spacer.value);
@@ -167,7 +215,10 @@ export default {
       active,
       activeLink,
       backToTop,
+      modal,
       isButtonVisible,
+      openNav,
+      closeNav,
     };
   },
 };

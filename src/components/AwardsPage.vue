@@ -1,7 +1,7 @@
 <template>
   <section id="awards" class="my-[70px] md:my-[140px]">
     <div class="max-w-[100%] mx-auto w-[80%]">
-      <h3 class="text-4xl md:text-7xl opacity-20 font-bold">Accomplishments</h3>
+      <h3 class="text-3xl md:text-7xl opacity-20 font-bold">Accomplishments</h3>
 
       <div class="mt-10 grid grid-cols-1 md:grid-cols-4 gap-10">
         <div class="bg-[#1f2f3b] shadow-xl shadow-[#1f2f3b] p-5 rounded-xl">

@@ -12,18 +12,51 @@
           <a href="mailto:">contact@foladavid.com</a>
         </p>
         <div class="flex gap-5">
-          <div class="cursor-pointer">
-            <img src="/icons/instagram.svg" alt="instagram" title="Instagram" />
-          </div>
-          <div class="cursor-pointer">
-            <img src="/icons/twitter.svg" alt="twitter" title="Twitter" />
-          </div>
-          <div class="cursor-pointer">
-            <img src="/icons/linkedin.svg" alt="linkedin" title="Linkedin" />
-          </div>
-          <div class="cursor-pointer">
-            <img src="/icons/facebook.svg" alt="facebook" title="Facebook" />
-          </div>
+          <a
+            href="https://www.instagram.com/foladavid"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="cursor-pointer">
+              <img
+                src="/icons/instagram.svg"
+                alt="instagram"
+                title="Instagram"
+              /></div
+          ></a>
+          <a
+            href="https://x.com/foladavidart"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><div class="cursor-pointer">
+              <img
+                src="/icons/twitter.svg"
+                alt="twitter"
+                title="Twitter"
+              /></div
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/dradefemifoladavid"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="cursor-pointer">
+              <img
+                src="/icons/linkedin.svg"
+                alt="linkedin"
+                title="Linkedin"
+              /></div
+          ></a>
+          <a
+            href="https://www.facebook.com/profile.php?id=1378806367&mibextid=LQQJ4d"
+          >
+            <div class="cursor-pointer">
+              <img
+                src="/icons/facebook.svg"
+                alt="facebook"
+                title="Facebook"
+              /></div
+          ></a>
         </div>
       </div>
       <div
@@ -32,37 +65,12 @@
         <div>
           <div><img src="" alt="" /></div>
           <h2 class="font-bold text-xl md:text-4xl text-accent">
-            <span class="inline-block h-3 w-3 border bg-accent-shades"></span>FD
+            <span
+              class="inline-block w-2 h-2 md:h-3 md:w-3 border bg-accent-shades"
+            ></span
+            >FD
           </h2>
         </div>
-
-        <!-- <div>
-          <ul class="hidden md:flex gap-10 font-light uppercase items-center">
-            <a href="#"
-              ><li class="text-lg cursor-pointer hover:text-accent">Home</li></a
-            >
-            <a href="#about"
-              ><li class="text-lg cursor-pointer hover:text-accent">
-                About
-              </li></a
-            >
-            <a href="#works"
-              ><li class="text-lg cursor-pointer hover:text-accent">
-                Works
-              </li></a
-            >
-            <a href="#awards"
-              ><li class="text-lg cursor-pointer hover:text-accent">
-                Awards
-              </li></a
-            >
-            <a href="#contact"
-              ><li class="text-lg cursor-pointer hover:text-accent">
-                Contact
-              </li></a
-            >
-          </ul>
-        </div> -->
 
         <div>
           <p class="text-xs md:text-base">
