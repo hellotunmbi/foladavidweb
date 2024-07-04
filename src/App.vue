@@ -1,30 +1,188 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <section>
+    <header
+      :class="{ scrolled: isScrolled }"
+      ref="header"
+      class="py-5 md:py-10 fixed top-0 right-0 left-0 z-50 bg-[#111927] animate__animated animate__fadeInDown shadow-sm shadow-neutral-800"
+    >
+      <div
+        class="w-[80%] flex justify-between items-center max-w-[100%] mx-auto"
+      >
+        <div>
+          <div><img src="" alt="" /></div>
+          <h2 class="font-bold text-3xl md:text-5xl text-accent">
+            <span class="inline-block h-3 w-3 border bg-accent-shades"></span>FD
+          </h2>
+        </div>
+
+        <nav>
+          <ul class="hidden md:flex gap-10 font-light uppercase items-center">
+            <a href="#"
+              ><li
+                @click="activeLink('home')"
+                class="sm:text-sm lg:text-lg cursor-pointer hover:text-accent"
+                :class="active === 'home' ? 'text-accent' : ''"
+              >
+                Home
+              </li></a
+            >
+            <a href="#about"
+              ><li
+                @click="activeLink('about')"
+                class="sm:text-sm lg:text-lg cursor-pointer hover:text-accent"
+                :class="active === 'about' ? 'text-accent' : ''"
+              >
+                About
+              </li></a
+            >
+            <a href="#works"
+              ><li
+                @click="activeLink('works')"
+                class="sm:text-sm lg:text-lg cursor-pointer hover:text-accent"
+                :class="active === 'works' ? 'text-accent' : ''"
+              >
+                Works
+              </li></a
+            >
+            <a href="#awards"
+              ><li
+                @click="activeLink('awards')"
+                class="sm:text-sm lg:text-lg cursor-pointer hover:text-accent"
+                :class="active === 'awards' ? 'text-accent' : ''"
+              >
+                Awards
+              </li></a
+            >
+            <a href="#contact"
+              ><li
+                @click="activeLink('contact')"
+                class="sm:text-sm lg:text-lg cursor-pointer hover:text-accent"
+                :class="active === 'contact' ? 'text-accent' : ''"
+              >
+                Contact
+              </li></a
+            >
+          </ul>
+          <div class="md:hidden"><img src="/icons/menu.svg" alt="" /></div>
+        </nav>
+      </div>
+    </header>
+
+    <section ref="spacer" class="spacer">
+      <router-view />
+    </section>
+
+    <div
+      class="hidden fixed md:flex flex-col gap-5 items-center left-4 bottom-0"
+    >
+      <div class="cursor-pointer">
+        <img src="/icons/instagram.svg" alt="instagram" title="Instagram" />
+      </div>
+      <div class="cursor-pointer">
+        <img src="/icons/twitter.svg" alt="twitter" title="Twitter" />
+      </div>
+      <div class="cursor-pointer">
+        <img src="/icons/linkedin.svg" alt="linkedin" title="Linkedin" />
+      </div>
+      <div class="cursor-pointer">
+        <img src="/icons/facebook.svg" alt="facebook" title="Facebook" />
+      </div>
+      <div class="border-l-[0.5px] h-[30px]"></div>
+    </div>
+
+    <!-- Back to top button -->
+    <div class="fixed bottom-5 end-5 z-40 flex flex-col items-center gap-1">
+      <!-- Back to Top -->
+      <button
+        class="z-20 flex h-10 w-10 items-center justify-center rounded-full bg-warning/20 text-warning shadow-[inset_0px_0px_12px_0px] shadow-warning/40 backdrop-blur-3xl transition-all duration-500"
+        :class="{ 'translate-x-16': !isButtonVisible }"
+        @click="backToTop"
+      >
+        <div class="border border-accent inline-block ease-in-out rounded-full">
+          <img src="/icons/arrow-up.svg" alt="" />
+        </div>
+      </button>
+    </div>
+  </section>
 </template>
 
+<script>
+import { ref, onMounted, onUnmounted } from "vue";
+
+export default {
+  setup() {
+    let isButtonVisible = ref(false);
+    const header = ref(null);
+    const spacer = ref(null);
+    const isScrolled = ref(false);
+    const active = ref("");
+    let observer = null;
+
+    const activeLink = (item) => {
+      active.value = item;
+    };
+
+    const options = {
+      root: null,
+      rootMargin: "-100px",
+      threshold: 0,
+    };
+
+    const handleIntersect = (entries) => {
+      entries.forEach((entry) => {
+        isScrolled.value = !entry.isIntersecting;
+      });
+    };
+
+    const backToTop = (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
+    onMounted(() => {
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 600) {
+          isButtonVisible.value = true;
+        } else {
+          isButtonVisible.value = false;
+        }
+      });
+
+      observer = new IntersectionObserver(handleIntersect, options);
+      if (spacer.value) {
+        observer.observe(spacer.value);
+      }
+    });
+
+    onUnmounted(() => {
+      if (observer && spacer.value) {
+        observer.unobserve(spacer.value);
+      }
+    });
+
+    return {
+      header,
+      spacer,
+      isScrolled,
+      active,
+      activeLink,
+      backToTop,
+      isButtonVisible,
+    };
+  },
+};
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+header {
+  display: none;
 }
 
-nav {
-  padding: 30px;
+header.scrolled {
+  display: flex;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+.spacer {
+  height: 50vh;
 }
 </style>
