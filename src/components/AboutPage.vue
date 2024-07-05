@@ -4,7 +4,7 @@
       class="sm:w-[80%] px-5 flex flex-col lg:flex-row justify-between gap-10 md:gap-20 items-center md:max-w-[100%] mx-auto"
     >
       <div
-        class="h-full w-full animate__animated animate__fadeInLeft animate__faster md:h-[50%] md:w-[60%] border-8 border-[#1e2a3ff9] rounded-2xl"
+        class="h-full w-full animate__animated animate__zoomIn animate__faster md:h-[50%] md:w-[60%] border-8 border-[#1e2a3ff9] rounded-2xl"
       >
         <img
           src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1720020124/about_eo6hqw.jpg"
@@ -20,7 +20,7 @@
           about me
         </h2>
         <p
-          class="pt-10 leading-loose text-base animate__animated animate__fadeInRight animate__delay-3s"
+          class="pt-10 leading-loose text-base animate__animated animate__zoomIn animate__delay-2s"
         >
           <span class="text-accent font-medium"> Adefemi Gbadamosi </span>
           popularly known as Fola David. A Nigerian based got his MBBS degree
@@ -30,7 +30,7 @@
         </p>
 
         <p
-          class="text-base leading-loose pt-3 animate__animated animate__fadeInRight animate__faster animate__delay-3s"
+          class="text-base leading-loose pt-3 animate__animated animate__zoomIn animate__faster animate__delay-3s"
         >
           Foladavid is widely known as Nigeria’s Foremost Speedpainter with the
           unique ability to create eye-catching and colourful images upside down
@@ -52,7 +52,7 @@
           As a Medical Practitional
         </h2>
         <p
-          class="pt-5 leading-loose text-base animate__animated animate__fadeInLeft animate__delay-2s"
+          class="pt-5 leading-loose text-base animate__animated animate__zoomIn animate__delay-2s"
         >
           Dr. Foladavid, In 2020, ventured into the communities during the
           covid-19 pandemic to help prevent the spread of the virus by educating
@@ -63,7 +63,7 @@
         </p>
 
         <p
-          class="text-base leading-loose pt-3 animate__animated animate__fadeInLeft animate__delay-2s"
+          class="text-base leading-loose pt-3 animate__animated animate__zoomIn animate__delay-2s"
         >
           He also contributed to fighting the covid19 virus greatly with his
           work at the Lagos state isolation centre, Onikan, he donated N95
@@ -74,14 +74,14 @@
           exclusive BBC interview on his work.
         </p>
         <p
-          class="text-base leading-loose pt-3 animate__animated animate__fadeInLeft animate__delay-2s"
+          class="text-base leading-loose pt-3 animate__animated animate__zoomIn animate__delay-2s"
         >
           In 2021, he started his work at The Aesthetic Clinic (TAC) Lagos where
           he works in the dermatology department and continues his practice as a
           doctor to this day.
         </p>
         <p
-          class="text-base leading-loose pt-3 animate__animated animate__fadeInLeft animate__delay-2s"
+          class="text-base leading-loose pt-3 animate__animated animate__zoomIn animate__delay-2s"
         >
           In 2022 He started the dermatological mission of the clinic with free
           dermatology outreaches to different communities with its maiden
@@ -91,7 +91,7 @@
         </p>
       </div>
       <div
-        class="h-full order-1 lg:order-2 w-full md:h-[50%] md:w-[60%] border-8 border-[#1e2a3ff9] animate__animated animate__fadeInRight animate__faster rounded-2xl"
+        class="h-full order-1 lg:order-2 w-full md:h-[50%] md:w-[60%] border-8 border-[#1e2a3ff9] animate__animated animate__zoomIn animate__faster rounded-2xl"
       >
         <img
           src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1720030706/doc_t97fps.jpg"
@@ -105,7 +105,7 @@
       class="sm:w-[80%] px-5 flex flex-col lg:flex-row justify-between gap-10 md:gap-20 items-center max-w-[100%] mx-auto"
     >
       <div
-        class="h-full w-full animate__animated animate__fadeInLeft md:h-[50%] md:w-[60%] border-8 border-[#1e2a3ff9] rounded-2xl"
+        class="h-full w-full animate__animated animate__zoomIn md:h-[50%] md:w-[60%] border-8 border-[#1e2a3ff9] rounded-2xl"
       >
         <img
           src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1720030706/paint_ishfgx.jpg"
@@ -121,7 +121,7 @@
           As a Visual Artist
         </h2>
         <p
-          class="pt-10 animate__animated animate__fadeInRight leading-loose text-base"
+          class="pt-10 animate__animated animate__zoomIn animate__delay-2s leading-loose text-base"
         >
           Dr. Foladavid is a multidisciplinary artist working with various
           mediums, he works masterfully with charcoals, pastels, acrylics and
@@ -137,7 +137,7 @@
         </p>
 
         <p
-          class="text-base animate__animated animate__fadeInRight leading-loose pt-3"
+          class="text-base animate__animated animate__zoomIn animate__delay-2s leading-loose pt-3"
         >
           He performed at the Estoril conferences in 2023 in Cascais, Portugal
           creating a painting of one of the children met during his
@@ -146,7 +146,7 @@
           on all the president’s social media pages.
         </p>
         <p
-          class="text-base animate__animated animate__fadeInRight leading-loose pt-3"
+          class="text-base animate__animated animate__zoomIn animate__delay-2s leading-loose pt-3"
         >
           He also painted live at the inaugural ball to commemorate the swearing
           in of the president. The painting which was received by the president

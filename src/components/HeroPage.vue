@@ -1,32 +1,32 @@
 <template>
-  <div>
+  <div id="home">
     <div></div>
     <div class="relative">
       <div
         class="absolute flex top-[80px] left-[20px] sm:top-[100px] lg:top-[200px] md:left-[50px]"
       >
-        <div class="max-w-full">
+        <div class="max-w-full z-30">
           <h1
-            class="text-[40px] z-20 font-bold md:font-medium md:text-[80px] flex-col md:flex-row flex md:gap-10 lg:text-[150px] animate__animated animate__fadeInLeft animate__faster"
+            class="text-[40px] font-bold md:font-medium md:text-[80px] flex-col md:flex-row flex md:gap-10 lg:text-[150px] animate__animated animate__zoomIn animate__faster"
           >
             <span>FOLA</span> <span>DAVID</span>
           </h1>
 
           <div class="flex gap-4 flex-wrap mt-5 lg:mt-10 md:justify-center">
             <div
-              class="text-lg md:text-xl lg:text-2xl flex items-center gap-1 animate__animated animate__fadeInLeft animate__faster"
+              class="text-lg md:text-xl lg:text-2xl flex items-center gap-1 animate__animated animate__zoomIn animate__faster"
             >
               <p class="w-3 h-3 bg-accent"></p>
               <span>Medical Doctor</span>
             </div>
             <div
-              class="text-lg md:text-xl lg:text-2xl flex items-center gap-1 animate__animated animate__fadeInLeft animate__faster animate__delay-2s"
+              class="text-lg md:text-xl lg:text-2xl flex items-center gap-1 animate__animated animate__zoomIn animate__faster animate__delay-2s"
             >
               <p class="w-3 h-3 bg-accent"></p>
               <span>Visual Artist</span>
             </div>
             <div
-              class="text-lg md:text-xl lg:text-2xl flex items-center gap-1 animate__animated animate__fadeInLeft animate__faster animate__delay-3s"
+              class="text-lg md:text-xl lg:text-2xl flex items-center gap-1 animate__animated animate__zoomIn animate__faster animate__delay-3s"
             >
               <p class="w-3 h-3 bg-accent"></p>
               <span>Humanitarian</span>
@@ -47,11 +47,11 @@
       </div>
 
       <div
-        class="max-w-full max-h-full md:min-w-[50%] mt-10 md:min-h-[40%] flex justify-end"
+        class="max-w-full max-h-full md:min-w-[50%] -z-10 mt-10 md:min-h-[40%] flex justify-end animate__animated animate__zoomIn animate__faster"
       >
         <img
           src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1720002576/fola_zddrau.png"
-          class="h-[60%] w-[70%] md:h-[40%] md:w-[45%] object-top animate__animated animate__fadeInRight animate__faster"
+          class="h-[60%] w-[70%] md:h-[40%] md:w-[45%] object-top"
         />
       </div>
     </div>

@@ -63,11 +63,26 @@
               </li></a
             >
           </ul>
-          <div v-if="modal !== true" @click="openNav" class="md:hidden">
-            <img src="/icons/menu.svg" alt="" />
-          </div>
-          <div v-else @click="closeNav" class="md:hidden">
-            <img src="/icons/close.svg" alt="" />
+          <div class="flex gap-2 items-center">
+            <div>
+              <a
+                href="https://www.foladavid.com/unityindiversity"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button
+                  class="sm:text-sm lg:text-lg font-light uppercase cursor-pointer hover:text-accent border rounded-md px-2 py-1 hover:bg-accent/10"
+                >
+                  project
+                </button></a
+              >
+            </div>
+            <div v-if="modal !== true" @click="openNav" class="md:hidden">
+              <img src="/icons/menu.svg" alt="" />
+            </div>
+            <div v-else @click="closeNav" class="md:hidden">
+              <img src="/icons/close.svg" alt="" />
+            </div>
           </div>
         </nav>
       </div>

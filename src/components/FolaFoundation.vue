@@ -22,7 +22,7 @@
           rel="noopener noreferrer"
           class="h-full lg:h-[600px] w-full rounded-lg"
         >
-          <div class="animate__animated animate__fadeInLeft animate__delay-1s">
+          <div class="animate__animated animate__zoomIn animate__delay-1s">
             <img
               src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1718884478/foundation_jacd9b.jpg"
               class="h-full lg:h-[600px] w-full rounded-lg object-cover hover:bg-black hover:opacity-80 object-top"
@@ -31,9 +31,7 @@
           </div>
         </a>
 
-        <div
-          class="w-full animate__animated animate__fadeInRight animate__delay-1s"
-        >
+        <div class="w-full animate__animated animate__zoomIn animate__delay-1s">
           <!-- <h3 class="text-xl md:text-2xl pb-5">Passion To Make A Difference</h3> -->
           <p class="text-base leading-loose pt-3">
             Dr. FolaDavid has improved the quality of life by cutting across
