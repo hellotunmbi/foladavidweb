@@ -15,7 +15,7 @@
           </h2>
         </div>
 
-        <nav>
+        <nav class="flex items-center md:gap-20">
           <ul class="hidden md:flex gap-10 font-light uppercase items-center">
             <a href="#"
               ><li
