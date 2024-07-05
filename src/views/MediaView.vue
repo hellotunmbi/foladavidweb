@@ -28,7 +28,7 @@
             active == 2 ? 'bg-warning text-primary' : 'text-primary bg-white'
           "
         >
-          The Journey
+          The Journeys
         </button>
       </div>
       <!-- <div class="">

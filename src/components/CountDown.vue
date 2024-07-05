@@ -41,38 +41,35 @@ import { defineComponent, ref, onMounted, onUnmounted } from "vue";
 export default defineComponent({
   name: "CountDown",
   setup() {
-    const now = new Date();
-    const targetDate = new Date(
-      new Date().getTime() + 11 * 24 * 60 * 60 * 1000
-    );
-
+    const targetDate = ref(new Date("Jul 16, 2024").getTime());
     const days = ref(0);
     const hours = ref(0);
     const minutes = ref(0);
     const seconds = ref(0);
 
-    const updateCountdown = () => {
-      const now = new Date().getTime();
-      const distance = targetDate.getTime() - now;
-
-      days.value = Math.floor(distance / (1000 * 60 * 60 * 24));
-      hours.value = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      minutes.value = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      seconds.value = Math.floor((distance % (1000 * 60)) / 1000);
-    };
-
-    let interval: number;
-
     onMounted(() => {
       updateCountdown();
-      // interval = window.setInterval(updateCountdown, 1000);
+      setInterval(updateCountdown, 1000);
     });
 
-    // onUnmounted(() => {
-    //   clearInterval(interval);
-    // });
+    const updateCountdown = () => {
+      const now = new Date().getTime();
+      const distance = targetDate.value - now;
+
+      if (distance > 0) {
+        days.value = Math.floor(distance / (1000 * 60 * 60 * 24));
+        hours.value = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        minutes.value = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        seconds.value = Math.floor((distance % (1000 * 60)) / 1000);
+      } else {
+        days.value = 0;
+        hours.value = 0;
+        minutes.value = 0;
+        seconds.value = 0;
+      }
+    };
 
     return {
       days,

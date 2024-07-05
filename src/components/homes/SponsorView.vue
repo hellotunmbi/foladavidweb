@@ -49,6 +49,29 @@
               </p>
             </blockquote>
           </div>
+
+          <div class="flex justify-center mt-10">
+            <a
+              target="_blank"
+              href="https://en.wikipedia.org/wiki/Tolaram_Group"
+              class="inline-flex items-center hover:text-warning justify-center gap-2 text-base py-3 px-8 rounded-md text-white bg-primary/90 hover:bg-primary transition-all duration-500"
+              >Read More
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-move-right-icon h-6 w-6"
+              >
+                <path d="M18 8L22 12L18 16"></path>
+                <path d="M2 12H22"></path></svg
+            ></a>
+          </div>
         </div>
       </div>
     </div>

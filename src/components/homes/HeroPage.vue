@@ -57,9 +57,7 @@
           </div>
         </div>
       </div>
-      <div
-        class="w-full animate__animated animate__fadeInLeft md:w-[50%] max-h-[50%] order-2"
-      >
+      <div class="w-full max-w-full md:max-w-[50%] max-h-[50%] order-2">
         <Swiper
           class="mySwiper"
           :modules="[Navigation, Thumbs, FreeMode, Autoplay]"
