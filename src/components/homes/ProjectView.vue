@@ -8,7 +8,7 @@
         <div class="mb-10 flex items-end justify-between">
           <div class="mx-auto max-w-4xl text-center">
             <span
-              class="py-1 px-3 rounded-md dark:text-white text-xs lg:text-sm font-medium uppercase tracking-wider border border-primary bg-primary/20 text-primary"
+              class="py-1 px-3 rounded-md dark:text-white text-xs lg:text-sm font-medium uppercase tracking-wider border border-primary bg-warning/30 text-white"
               >project</span
             >
             <h2
