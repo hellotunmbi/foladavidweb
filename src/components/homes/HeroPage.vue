@@ -23,22 +23,22 @@
           >
             <router-link :to="{ name: 'project' }">
               <button
-                class="capitalize bg-primary hover:text-warning px-5 md:px-10 hover:bg-primary/80 text-xs sm:text-sm 2xl:text-lg cursor-pointer text-white py-3 rounded-md"
+                class="capitalize bg-primary hover:text-warning px-3 md:px-6 hover:bg-primary/80 text-xs sm:text-sm 2xl:text-lg cursor-pointer text-white py-3 rounded-md"
               >
-                project
+                register to attend
               </button></router-link
             >
 
-            <div class="w-[400px]">
+            <div class="w-[220px] md:w-[350px]">
               <select
                 v-model="selectedLink"
                 @change="navigate"
                 name="tribe"
                 id="tribe"
-                class="w-full bg-transparent border hover:text-primary-300 border-primary-50 py-2 md:py-3 rounded-md flex justify-between items-center px-3 over:cursor-pointer"
+                class="w-full bg-transparent border text-xs sm:text-sm 2xl:text-lg hover:text-primary-300 border-primary-50 py-2 md:py-3 rounded-md flex justify-between items-center px-3 over:cursor-pointer"
               >
                 <option value="" disabled selected>
-                  Select your tribe, Generate your custom dp for free
+                  Select your tribe, Generate free custom DP
                 </option>
                 <option value="https://getdp.co/Xyi">Fulani</option>
                 <option value="https://getdp.co/XyV">Hausa</option>
@@ -48,6 +48,13 @@
                 <option value="https://getdp.co/XyX">Ijaw</option>
                 <option value="https://getdp.co/Xyp">kanuri</option>
                 <option value="https://getdp.co/XyL">Tiv</option>
+                <option value="https://getdp.co/XCR">Nupe</option>
+                <option value="https://getdp.co/XD0">Efik</option>
+                <option value="https://getdp.co/XDa">Annang</option>
+                <option value="https://getdp.co/XDu">Igala</option>
+                <option value="https://getdp.co/XD1">Gwari</option>
+                <option value="https://getdp.co/XDS">Jakun</option>
+                <option value="https://getdp.co/XDM">Edo</option>
               </select>
             </div>
           </div>
@@ -115,7 +122,7 @@
           <SwiperSlide>
             <div class="">
               <img
-                src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1720134155/oju6_kfttc9_c_crop_ar_3_4_bvx8gq.jpg"
+                src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1720214021/oju2_nuwigo_potr_v3vvzk.jpg"
                 alt=""
                 class="h-[700px] 2xl:h-[1000px] bg-contain object-scale-down w-full"
               />

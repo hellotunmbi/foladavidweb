@@ -45,6 +45,17 @@
           >
             <router-link
               class="inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 rounded-full capitalize"
+              :class="active.includes('ethnics') ? 'text-warning' : ''"
+              :to="{ name: 'ethnics' }"
+              >Tribes</router-link
+            >
+          </li>
+          <li
+            @click="closeNav"
+            class="menu-item text-default-600 mx-2 transition-all duration-300 hover:text-warning [&.active]:text-warning"
+          >
+            <router-link
+              class="inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 rounded-full capitalize"
               :class="active.includes('project') ? 'text-warning' : ''"
               :to="{ name: 'project' }"
               >Project</router-link
