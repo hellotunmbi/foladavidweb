@@ -50,11 +50,11 @@
             </blockquote>
           </div>
 
-          <div class="flex justify-center mt-10">
+          <div class="flex justify-center mt-5 md:mt-20">
             <a
               target="_blank"
               href="https://en.wikipedia.org/wiki/Tolaram_Group"
-              class="inline-flex items-center hover:text-warning justify-center gap-2 text-base py-3 px-8 rounded-md text-white bg-primary/90 hover:bg-primary transition-all duration-500"
+              class="inline-flex items-center hover:text-primary-400 justify-center gap-2 text-base py-3 px-8 rounded-md text-white bg-primary/90 hover:bg-primary transition-all duration-500"
               >Read More
               <svg
                 xmlns="http://www.w3.org/2000/svg"

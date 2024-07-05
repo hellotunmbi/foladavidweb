@@ -19,7 +19,7 @@
         class="grid md:grid-cols-2 grid-cols-1 gap-x-16 gap-y-10 mt-5 md:mt-10 items-center"
       >
         <div
-          class="rounded-lg h-full w-full animate__animated animate__fadeInLeft animate__delay-2s"
+          class="rounded-lg h-full w-full animate__animated animate__zoomIn animate__delay-2s"
         >
           <img
             src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1718809977/map_ybak4n.png"

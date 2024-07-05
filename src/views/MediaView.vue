@@ -8,11 +8,13 @@
       </h3>
     </div>
 
-    <div class="flex items-center gap-5 py-5 md:py-10 w-full">
-      <div class="">
+    <div
+      class="flex items-stretch gap-5 py-5 md:py-10 max-w-full overflow-x-auto"
+    >
+      <div class="w-auto">
         <button
           @click="tabs(1)"
-          class="capitalize px-5 py-1.5 rounded-xl hover:bg-warning hover:text-white"
+          class="capitalize w-[200px] text-xs py-1.5 rounded-xl hover:bg-warning hover:text-white"
           :class="
             active == 1 ? 'bg-warning text-primary' : 'text-primary bg-white'
           "
@@ -20,10 +22,10 @@
           ojude oba festival in Ijebuland
         </button>
       </div>
-      <div class="">
+      <div class="w-auto">
         <button
           @click="tabs(2)"
-          class="px-5 py-1.5 rounded-xl hover:bg-warning hover:text-white"
+          class="text-xs py-1.5 block w-[100px] rounded-xl hover:bg-warning hover:text-white"
           :class="
             active == 2 ? 'bg-warning text-primary' : 'text-primary bg-white'
           "
@@ -34,7 +36,7 @@
       <!-- <div class="">
         <button
           @click="tabs(3)"
-          class="text-primary bg-white px-5 py-1.5 rounded-xl hover:bg-warning hover:text-white"
+          class="text-primary bg-white w-[100px] text-xs py-1.5 rounded-xl hover:bg-warning hover:text-white"
           :class="active === 3 ? 'bg-warning text-primary' : ''"
         >
           Tab 3
@@ -43,7 +45,7 @@
       <div class="">
         <button
           @click="tabs(4)"
-          class="text-primary bg-white px-5 py-1.5 rounded-xl hover:bg-warning hover:text-white"
+          class="text-primary bg-white w-[100px] text-xs py-1.5 rounded-xl hover:bg-warning hover:text-white"
           :class="active == 4 ? 'bg-warning text-primary' : ''"
         >
           Tab 4
@@ -52,7 +54,7 @@
       <div class="">
         <button
           @click="tabs(5)"
-          class="text-primary bg-white px-5 py-1.5 rounded-xl hover:bg-warning hover:text-white"
+          class="text-primary bg-white w-[100px] text-xs py-1.5 rounded-xl hover:bg-warning hover:text-white"
           :class="active == 5 ? 'bg-warning text-primary' : ''"
         >
           Tab 5

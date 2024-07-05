@@ -11,7 +11,7 @@
             Welcome to the Unity in Diversity Project!
           </h1>
           <p
-            class="animate__animated animate__fadeInUp animate__delay-1s text-white text-sm lg:text-xl 2xl:text-2xl"
+            class="animate__animated animate__fadeInUp animate__faster animate__delay-1s text-white text-sm lg:text-xl 2xl:text-2xl"
           >
             Celebrating Nigeria's rich cultural heritage and
             <br class="hidden sm:inline" />
@@ -19,7 +19,7 @@
           </p>
 
           <div
-            class="animate__animated animate__fadeInUp animate__delay-2s flex gap-4 pt-4 items-center"
+            class="animate__animated animate__fadeInUp animate__faster animate__delay-2s flex gap-4 pt-4 items-center"
           >
             <router-link :to="{ name: 'project' }">
               <button

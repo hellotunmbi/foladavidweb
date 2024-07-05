@@ -16,7 +16,7 @@
       </div>
       <div class="grid lg:grid-cols-2 grid-cols-1 gap-6 items-center">
         <div
-          class="relative overflow-hidden animate__animated animate__fadeInLeft animate__delay-2s"
+          class="relative overflow-hidden animate__animated animate__zoomIn animate__delay-2s"
         >
           <img
             src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1718809947/hands_moz0nr.jpg"
@@ -26,7 +26,7 @@
           <div class="absolute inset-0 rounded-md bg-black/40"></div>
         </div>
         <div
-          class="lg:-ms-20 z-10 animate__animated animate__fadeInRight animate__delay-2s"
+          class="lg:-ms-20 z-10 animate__animated animate__zoomIn animate__delay-2s"
         >
           <div
             class="divide-y divide-default-800 bg-default-500 rounded-md shadow"

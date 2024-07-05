@@ -2,7 +2,7 @@
 <template>
   <!-- Main Navigation Menu -->
   <header
-    class="inset-x-0 top-0 z-60 transition-all duration-500 py-3 shadow-2xl bg-gradient-to-r from-[#181630] via-[#032136] to-[#181630] fixed"
+    class="inset-x-0 top-0 left-0 right-0 z-60 py-3 shadow-2xl bg-gradient-to-r from-[#181630] via-[#032136] to-[#181630] fixed"
   >
     <section class="container2 flex items-center justify-between gap-4">
       <div class="">

@@ -14,7 +14,9 @@
         <SideNav @close-modal="closeNav" />
       </div>
 
-      <RouterView />
+      <div class="max-w-[100%]">
+        <RouterView />
+      </div>
 
       <!-- Footer -->
       <Footer />

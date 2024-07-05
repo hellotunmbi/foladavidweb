@@ -5,7 +5,7 @@
         class="grid md:grid-cols-2 grid-cols-1 gap-x-16 gap-y-10 items-center pb-10 md:pb-20"
       >
         <div
-          class="rounded-lg h-[80%] w-full mt-5 animate__animated animate__fadeInLeft animate__delay-1s"
+          class="rounded-lg h-[80%] w-full mt-5 animate__animated animate__zoomIn animate__delay-1s"
         >
           <img
             src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1718809961/img-6_fjfccz.jpg"
@@ -21,7 +21,7 @@
             The Unity in Diversity Project
           </h2>
           <p
-            class="text-sm 2xl:text-base animate__animated animate__fadeInRight animate__delay-2s"
+            class="text-sm 2xl:text-base animate__animated animate__zoomIn animate__delay-2s"
           >
             Dr. Foladavid, medical doctor, visual artist, and humanitarian in
             collaboration with Tolaram Group, proudly unveils "The Unity in
@@ -30,14 +30,14 @@
             journey spanning visual art, documentary and cultural celebration.
           </p>
 
-          <div class="animate__animated animate__fadeInRight animate__delay-3s">
+          <div class="animate__animated animate__zoomIn animate__delay-3s">
             <p class="text-base text-default-700 font-semibold">
               The project unfolds in three compelling phases:
             </p>
           </div>
 
           <div
-            class="space-y-6 animate__animated animate__fadeInRight animate__delay-4s"
+            class="space-y-6 animate__animated animate__zoomIn animate__delay-4s"
           >
             <div>
               <p class="text-lg text-warning font-bold">Road to Record</p>
@@ -154,9 +154,7 @@
             rel="noopener noreferrer"
             class="h-full lg:h-[600px] w-full rounded-lg"
           >
-            <div
-              class="animate__animated animate__fadeInLeft animate__delay-1s"
-            >
+            <div class="animate__animated animate__zoomIn animate__delay-1s">
               <img
                 src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1718884478/foundation_jacd9b.jpg"
                 class="h-full lg:h-[600px] w-full rounded-lg object-cover hover:bg-black hover:opacity-80 object-top"
@@ -166,7 +164,7 @@
           </a>
 
           <div
-            class="w-full animate__animated animate__fadeInRight animate__delay-1s"
+            class="w-full animate__animated animate__zoomIn animate__delay-1s"
           >
             <h3 class="text-warning text-xl md:text-2xl pb-5">
               Passion To Make A Difference
