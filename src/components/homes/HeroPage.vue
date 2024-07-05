@@ -19,7 +19,7 @@
           </p>
 
           <div
-            class="animate__animated animate__fadeInUp animate__delay-2s flex gap-4 items-center"
+            class="animate__animated animate__fadeInUp animate__delay-2s flex gap-4 pt-4 items-center"
           >
             <router-link :to="{ name: 'project' }">
               <button
@@ -90,6 +90,15 @@
           <SwiperSlide>
             <div class="">
               <img
+                src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1720134934/oju4_lkwaip_potr_z12cgc.jpg"
+                alt=""
+                class="h-[700px] 2xl:h-[1000px] bg-contain object-scale-down w-full"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div class="">
+              <img
                 src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1718809950/img-2_ov4sro.jpg"
                 alt=""
                 class="h-[700px] 2xl:h-[1000px] bg-contain object-scale-down w-full"
@@ -99,7 +108,34 @@
           <SwiperSlide>
             <div class="">
               <img
+                src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1720132794/kanuri_qtph8d.jpg"
+                alt=""
+                class="h-[700px] 2xl:h-[1000px] bg-contain object-scale-down w-full"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div class="">
+              <img
+                src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1720134155/oju6_kfttc9_c_crop_ar_3_4_bvx8gq.jpg"
+                alt=""
+                class="h-[700px] 2xl:h-[1000px] bg-contain object-scale-down w-full"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div class="">
+              <img
                 src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1719527909/IMG_3634_dubryo.jpg"
+                alt=""
+                class="h-[700px] 2xl:h-[1000px] bg-contain object-scale-down w-full"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div class="">
+              <img
+                src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1720132794/efik_pc8oot.jpg"
                 alt=""
                 class="h-[700px] 2xl:h-[1000px] bg-contain object-scale-down w-full"
               />

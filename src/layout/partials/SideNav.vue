@@ -1,6 +1,8 @@
 <template>
   <!-- Mobile Menu (Sidebar Menu) -->
-  <div class="bg-white fixed top-0 pt-20 z-50 w-[250px] h-full">
+  <div
+    class="bg-gradient-to-r from-[#181630] via-[#032136] to-[#181630] fixed top-0 pt-20 z-50 w-[250px] h-full"
+  >
     <!-- <div
       @click="closeNav"
       class="flex justify-end items-center mr-2 border-default-200 h-16 transition-all duration-300"
@@ -17,60 +19,73 @@
         >
           <li
             @click="closeNav"
-            class="menu-item text-default-600 mx-2 transition-all duration-300 hover:text-primary [&.active]:text-primary"
+            class="menu-item text-default-600 mx-2 transition-all duration-300 hover:text-warning [&.active]:text-warning"
           >
             <router-link
               class="inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 rounded-full capitalize"
-              :class="active.includes('/') ? 'text-primary' : ''"
+              :class="active.includes('/') ? 'text-warning' : ''"
               :to="{ name: 'home' }"
               >Home</router-link
             >
           </li>
           <li
             @click="closeNav"
-            class="menu-item text-default-600 mx-2 transition-all duration-300 hover:text-primary [&.active]:text-primary"
+            class="menu-item text-default-600 mx-2 transition-all duration-300 hover:text-warning [&.active]:text-warning"
           >
             <router-link
               class="inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 rounded-full capitalize"
-              :class="active.includes('about') ? 'text-primary' : ''"
+              :class="active.includes('about') ? 'text-warning' : ''"
               :to="{ name: 'about' }"
               >About</router-link
             >
           </li>
           <li
             @click="closeNav"
-            class="menu-item text-default-600 mx-2 transition-all duration-300 hover:text-primary [&.active]:text-primary"
+            class="menu-item text-default-600 mx-2 transition-all duration-300 hover:text-warning [&.active]:text-warning"
           >
             <router-link
               class="inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 rounded-full capitalize"
-              :class="active.includes('project') ? 'text-primary' : ''"
+              :class="active.includes('project') ? 'text-warning' : ''"
               :to="{ name: 'project' }"
               >Project</router-link
             >
           </li>
           <li
             @click="closeNav"
-            class="menu-item text-default-600 mx-2 transition-all duration-300 hover:text-primary [&.active]:text-primary"
+            class="menu-item text-default-600 mx-2 transition-all duration-300 hover:text-warning [&.active]:text-warning"
           >
             <router-link
               class="inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 rounded-full capitalize"
-              :class="active.includes('media') ? 'text-primary' : ''"
+              :class="active.includes('media') ? 'text-warning' : ''"
               :to="{ name: 'media' }"
               >Media</router-link
             >
           </li>
           <li
             @click="closeNav"
-            class="menu-item text-default-600 mx-2 transition-all duration-300 hover:text-primary [&.active]:text-primary"
+            class="menu-item text-default-600 mx-2 transition-all duration-300 hover:text-warning [&.active]:text-warning"
           >
             <router-link
               class="inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 rounded-full capitalize"
-              :class="active.includes('contact') ? 'text-primary' : ''"
+              :class="active.includes('contact') ? 'text-warning' : ''"
               :to="{ name: 'contact' }"
               >Contact Us</router-link
             >
           </li>
         </ul>
+        <a
+          href="https://forms.gle/qk396PCqh9RTKDvS7"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div>
+            <button
+              class="rounded-xl text-xs border border-default-400 px-3 py-2 text-default-950 md:text-sm transition-all duration-300 bg-primary-900 hover:bg-warning-600 hover:text-white cursor-pointer"
+            >
+              Register here to volunteer
+            </button>
+          </div></a
+        >
       </nav>
     </div>
   </div>

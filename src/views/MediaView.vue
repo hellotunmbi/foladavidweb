@@ -8,57 +8,61 @@
       </h3>
     </div>
 
-    <div class="flex items-center gap-5 py-6">
-      <div>
+    <div class="flex items-center gap-5 py-5 md:py-10 w-full">
+      <div class="">
         <button
           @click="tabs(1)"
-          class="text-primary bg-white px-5 py-1.5 rounded-xl hover:bg-warning hover:text-white"
-          :class="active == 1 ? 'bg-warning text-white' : ''"
+          class="capitalize px-5 py-1.5 rounded-xl hover:bg-warning hover:text-white"
+          :class="
+            active == 1 ? 'bg-warning text-primary' : 'text-primary bg-white'
+          "
         >
-          Tab 1
+          ojude oba festival in Ijebuland
         </button>
       </div>
-      <div>
+      <div class="">
         <button
           @click="tabs(2)"
-          class="text-primary bg-white px-5 py-1.5 rounded-xl hover:bg-warning hover:text-white"
-          :class="active == 2 ? 'bg-warning text-white' : ''"
+          class="px-5 py-1.5 rounded-xl hover:bg-warning hover:text-white"
+          :class="
+            active == 2 ? 'bg-warning text-primary' : 'text-primary bg-white'
+          "
         >
-          Tab 2
+          The Journey
         </button>
       </div>
-      <div>
+      <!-- <div class="">
         <button
           @click="tabs(3)"
           class="text-primary bg-white px-5 py-1.5 rounded-xl hover:bg-warning hover:text-white"
-          :class="active === 3 ? 'bg-warning text-white' : ''"
+          :class="active === 3 ? 'bg-warning text-primary' : ''"
         >
           Tab 3
         </button>
       </div>
-      <div>
+      <div class="">
         <button
           @click="tabs(4)"
           class="text-primary bg-white px-5 py-1.5 rounded-xl hover:bg-warning hover:text-white"
-          :class="active == 4 ? 'bg-warning text-white' : ''"
+          :class="active == 4 ? 'bg-warning text-primary' : ''"
         >
           Tab 4
         </button>
       </div>
-      <div>
+      <div class="">
         <button
           @click="tabs(5)"
           class="text-primary bg-white px-5 py-1.5 rounded-xl hover:bg-warning hover:text-white"
-          :class="active == 5 ? 'bg-warning text-white' : ''"
+          :class="active == 5 ? 'bg-warning text-primary' : ''"
         >
           Tab 5
         </button>
-      </div>
+      </div> -->
     </div>
 
     <div v-if="tab === 1">
       <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
-        <div v-for="(img, idx) in images" :key="idx" class="relative">
+        <div v-for="(img, idx) in ojudeImages" :key="idx" class="relative">
           <div v-if="loading">
             <SkeletonCard />
 
@@ -91,6 +95,47 @@
 
       <vue-easy-lightbox
         :visible="visibleRef"
+        :imgs="ojudeImages"
+        :index="indexRef"
+        @hide="onHide"
+      ></vue-easy-lightbox>
+    </div>
+
+    <div v-if="tab === 2">
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
+        <div v-for="(img2, idx) in images" :key="idx" class="relative">
+          <div v-if="loading">
+            <SkeletonCard />
+
+            loading
+          </div>
+
+          <div
+            v-else
+            class="w-full md:h-[300px] relative animate__animated animate__zoomIn"
+          >
+            <img
+              :src="img2"
+              alt=""
+              class="w-full md:h-[300px] object-cover bg-cover rounded-lg"
+            />
+
+            <div
+              class="absolute z-50 inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity"
+            >
+              <button
+                @click="() => showImg(index)"
+                class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors"
+              >
+                View
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <vue-easy-lightbox
+        :visible="visibleRef"
         :imgs="images"
         :index="indexRef"
         @hide="onHide"
@@ -98,7 +143,6 @@
     </div>
 
     <!--  -->
-    <div v-if="tab === 2">tab-2</div>
     <div v-if="tab === 3">tab-3</div>
     <div v-if="tab === 4">tab-4</div>
     <div v-if="tab === 5">tab-5</div>
@@ -108,82 +152,35 @@
 <script setup lang="ts">
 import SkeletonCard from "@/layout/partials/SkeletonCard.vue";
 import { ref, onMounted } from "vue";
+import { medias, ojude } from "@/utilities/medias";
 
 const visibleRef = ref(false);
 const indexRef = ref(0);
-
-const showImg = (index) => {
-  indexRef.value = index;
-  visibleRef.value = true;
-};
-const onHide = () => (visibleRef.value = false);
-
-const medias = ref([
-  {
-    url: "https://res.cloudinary.com/dtkbcuiit/image/upload/v1719594104/imgg_2_aoexjg.jpg",
-  },
-  {
-    url: "https://res.cloudinary.com/dtkbcuiit/image/upload/v1719594104/IMG_7633_ofg3yx.jpg",
-  },
-  {
-    url: "https://res.cloudinary.com/dtkbcuiit/image/upload/v1719594104/IMG_7632_btg6ry.jpg",
-  },
-  {
-    url: "https://res.cloudinary.com/dtkbcuiit/image/upload/v1719594103/IMG_7630_wvr7xw.jpg",
-  },
-  {
-    url: "https://res.cloudinary.com/dtkbcuiit/image/upload/v1719594102/IMG_7629_rxnymo.jpg",
-  },
-  {
-    url: "https://res.cloudinary.com/dtkbcuiit/image/upload/v1719594096/IMG_7628_xcaf6a.jpg",
-  },
-  {
-    url: "https://res.cloudinary.com/dtkbcuiit/image/upload/v1719594095/IMG_7626_x8xsl1.jpg",
-  },
-  {
-    url: "https://res.cloudinary.com/dtkbcuiit/image/upload/v1719594045/IMG_7624_e51rv8.jpg",
-  },
-  {
-    url: "https://res.cloudinary.com/dtkbcuiit/image/upload/v1719594120/imm_2_mpujdp.jpg",
-  },
-  {
-    url: "https://res.cloudinary.com/dtkbcuiit/image/upload/v1719594044/IMG_7616_gwlepf.jpg",
-  },
-  {
-    url: "https://res.cloudinary.com/dtkbcuiit/image/upload/v1719594044/IMG_7619_wytpbn.jpg",
-  },
-  {
-    url: "https://res.cloudinary.com/dtkbcuiit/image/upload/v1719594044/IMG_7617_zrbqdm.jpg",
-  },
-  {
-    url: "https://res.cloudinary.com/dtkbcuiit/image/upload/v1719594044/IMG_7615_wabgox.jpg",
-  },
-  {
-    url: "https://res.cloudinary.com/dtkbcuiit/image/upload/v1719594044/IMG_7614_yd3l69.jpg",
-  },
-  {
-    url: "https://res.cloudinary.com/dtkbcuiit/image/upload/v1719594044/IMG_7618_v7kzbb.jpg",
-  },
-  {
-    url: "https://res.cloudinary.com/dtkbcuiit/image/upload/v1719594045/IMG_7621_dshijf.jpg",
-  },
-  {
-    url: "https://res.cloudinary.com/dtkbcuiit/image/upload/v1719594045/IMG_7622_wgeey6.jpg",
-  },
-  {
-    url: "https://res.cloudinary.com/dtkbcuiit/image/upload/v1719594045/IMG_7620_gygkxz.jpg",
-  },
-]);
+const meds = ref(medias);
+const ojudes = ref(ojude);
 const loading = ref(false);
 const images = ref();
+const ojudeImages = ref();
 const tab = ref(1);
 const active = ref(1);
 
+const getAllOjudes = () => {
+  let imgs;
+
+  loading.value = true;
+  imgs = ojudes.value.map((img) => img.url);
+  ojudeImages.value = imgs;
+
+  loading.value = false;
+};
+
 const getAllImages = () => {
   let imgs;
+
   loading.value = true;
-  imgs = medias.value.map((img) => img.url);
+  imgs = meds.value.map((img) => img.url);
   images.value = imgs;
+
   loading.value = false;
 };
 
@@ -192,7 +189,14 @@ const tabs = (picTab: any) => {
   active.value = picTab;
 };
 
+const showImg = (index) => {
+  indexRef.value = index;
+  visibleRef.value = true;
+};
+const onHide = () => (visibleRef.value = false);
+
 onMounted(() => {
+  getAllOjudes();
   getAllImages();
 });
 </script>

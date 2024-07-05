@@ -31,7 +31,7 @@
   </div>
   <div class="flex flex-col md:flex-row gap-5 mt-5">
     <p class="text-sm md:text-base">Time:</p>
-    <p class="text-base sm:text-xl text-warning">10.00 AM</p>
+    <p class="text-base sm:text-xl text-warning">10.00 AM - 10.00 PM</p>
   </div>
 </template>
 
@@ -41,8 +41,10 @@ import { defineComponent, ref, onMounted, onUnmounted } from "vue";
 export default defineComponent({
   name: "CountDown",
   setup() {
-    const targetDate = new Date();
-    targetDate.setDate(targetDate.getDate() + 15);
+    const now = new Date();
+    const targetDate = new Date(
+      new Date().getTime() + 11 * 24 * 60 * 60 * 1000
+    );
 
     const days = ref(0);
     const hours = ref(0);
@@ -65,12 +67,12 @@ export default defineComponent({
 
     onMounted(() => {
       updateCountdown();
-      interval = window.setInterval(updateCountdown, 1000);
+      // interval = window.setInterval(updateCountdown, 1000);
     });
 
-    onUnmounted(() => {
-      clearInterval(interval);
-    });
+    // onUnmounted(() => {
+    //   clearInterval(interval);
+    // });
 
     return {
       days,

@@ -16,35 +16,35 @@
         <div class="flex items-center h-20 w-30">
           <img
             src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1718808673/fmy_ow0hhn.png"
-            alt=""
+            alt="..."
             class="h-20 w-30 object-cover"
           />
         </div>
         <div class="flex items-center gap-2 h-20 w-30">
           <img
             src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1718808679/lys_bh26zl.png"
-            alt=""
+            alt="..."
             class="h-20 w-30 object-cover"
           />
         </div>
         <div class="flex items-center gap-2 h-20 w-30">
           <img
             src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1718808680/nga_zawynp.png"
-            alt=""
+            alt="..."
             class="h-20 w-30 object-cover"
           />
         </div>
         <div class="flex items-center gap-2 h-20 w-30">
           <img
             src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1718808684/ntdc_j0ry1p.png"
-            alt=""
+            alt="..."
             class="h-20 w-30 object-cover"
           />
         </div>
         <div class="flex items-center gap-2 h-20 w-30">
           <img
             src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1718808687/ntn_ms3alr.png"
-            alt=""
+            alt="..."
             class="h-20 w-30 object-cover"
           />
         </div>
@@ -57,35 +57,35 @@
         <div class="flex items-center gap-2 h-20 w-30">
           <img
             src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1718808673/fmy_ow0hhn.png"
-            alt=""
+            alt="..."
             class="h-20 w-30 object-cover"
           />
         </div>
         <div class="flex items-center gap-2 h-20 w-30">
           <img
             src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1718808679/lys_bh26zl.png"
-            alt=""
+            alt="..."
             class="h-20 w-30 object-cover"
           />
         </div>
         <div class="flex items-center gap-2 h-20 w-30">
           <img
             src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1718808680/nga_zawynp.png"
-            alt=""
+            alt="..."
             class="h-20 w-30 object-cover"
           />
         </div>
         <div class="flex items-center gap-2 h-20 w-30">
           <img
             src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1718808684/ntdc_j0ry1p.png"
-            alt=""
+            alt="..."
             class="h-20 w-30 object-cover"
           />
         </div>
         <div class="flex items-center gap-2 h-20 w-30">
           <img
             src="https://res.cloudinary.com/dtkbcuiit/image/upload/v1718808687/ntn_ms3alr.png"
-            alt=""
+            alt="..."
             class="h-20 w-30 object-cover"
           />
         </div>

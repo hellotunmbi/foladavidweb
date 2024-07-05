@@ -72,45 +72,30 @@
         </ul>
       </div>
 
-      <div>
-        <div
-          :class="active.includes('photo')"
-          @click="openPhotoModal"
-          class="group hidden md:inline-flex items-center justify-center gap-2 rounded-full border border-default-400 px-1 py-1 pe-4 text-default-950 transition-all duration-300 hover:bg-warning-600 hover:text-white cursor-pointer"
-        >
-          <span
-            class="me-2 flex h-11 w-11 items-center justify-center text-xs rounded-full bg-warning/20 text-warning transition-all duration-300 group-hover:bg-white group-hover:text-black"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-image-icon h-5 w-5"
-            >
-              <rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect>
-              <circle cx="9" cy="9" r="2"></circle>
-              <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg
-          ></span>
-          <span class="text-xs sm:text-sm"
-            >Generate your custom dp for free</span
+      <div class="flex gap-3 items-center">
+        <a
+          href="https://forms.gle/qk396PCqh9RTKDvS7"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><button
+            class="rounded-xl inline-flex text-xs border border-default-400 px-3 py-2 text-default-950 md:text-sm transition-all duration-300 bg-primary-900 hover:bg-warning-600 hover:text-white cursor-pointer"
           >
-        </div>
-        <MenuIcon
-          v-if="!navDrawer"
-          @click="openNav"
-          class="w-7 h-7 text-default-600 hover:text-default-900 sm:hidden"
-        />
+            Register here to volunteer
+          </button></a
+        >
+        <div>
+          <MenuIcon
+            v-if="!navDrawer"
+            @click="openNav"
+            class="w-7 h-7 text-default-600 hover:text-default-900 sm:hidden"
+          />
 
-        <X
-          v-else
-          @click="closeNav"
-          class="w-7 h-7 text-default-600 hover:text-default-900 sm:hidden"
-        />
+          <X
+            v-else
+            @click="closeNav"
+            class="w-7 h-7 text-default-600 hover:text-default-900 sm:hidden"
+          />
+        </div>
       </div>
     </section>
   </header>
