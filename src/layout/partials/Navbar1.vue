@@ -99,14 +99,14 @@
                   >Register to volunteer</a
                 >
               </div>
-              <!-- <div class="hover:text-warning-600 py-2 text-sm">
+              <div class="hover:text-warning-600 py-2 text-sm">
                 <a
                   href="https://forms.gle/g6BeVsuJWQ6ZPQVHA"
                   target="_blank"
                   rel="noopener noreferrer"
                   >Register to attend for free</a
                 >
-              </div> -->
+              </div>
             </div>
           </template>
         </popper>
