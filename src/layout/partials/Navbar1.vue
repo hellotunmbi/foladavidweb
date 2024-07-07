@@ -100,7 +100,10 @@
                 >
               </div>
               <div class="hover:text-warning-600 py-2 text-sm">
-                <a href="" target="_blank" rel="noopener noreferrer"
+                <a
+                  href="https://forms.gle/g6BeVsuJWQ6ZPQVHA"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   >Register to attend for free</a
                 >
               </div>

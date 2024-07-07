@@ -215,7 +215,7 @@
       </section>
 
       <!--  -->
-      <section>
+      <!-- <section>
         <section id="about" class="py-10 lg:py-20">
           <h3 class="py-5 text-2xl md:text-3xl">Our Teams</h3>
 
@@ -244,7 +244,7 @@
             />
           </div>
         </section>
-      </section>
+      </section> -->
 
       <div v-if="modal">
         <DonateComp @close-modall="closeModal" />
