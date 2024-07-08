@@ -11,10 +11,7 @@ const routes: Array<RouteRecordRaw> = [
     name: "home",
     component: HomeView,
   },
-  {
-    path: "/",
-    redirect: "https://uid.foladavid.com",
-  },
+
   {
     path: "/unityindiversity/about",
     name: "about",
