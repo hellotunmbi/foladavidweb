@@ -27,13 +27,13 @@
               rel="noopener noreferrer"
             >
               <button
-                class="capitalize bg-primary hover:text-warning px-3 md:px-6 hover:bg-primary/80 text-xs sm:text-sm 2xl:text-lg cursor-pointer text-white py-3 rounded-md"
+                class="capitalize bg-primary hover:text-warning px-2 md:px-5 hover:bg-primary/80 text-xs sm:text-sm 2xl:text-lg cursor-pointer text-white py-3 rounded-md"
               >
                 register to attend
               </button></a
             >
 
-            <div class="w-[220px] md:w-[350px]">
+            <div class="w-[200px] md:w-[350px]">
               <select
                 v-model="selectedLink"
                 @change="navigate"
