@@ -179,25 +179,4 @@ const openPhotoModal = () => {
 const closeNav = () => {
   emit("closeModal");
 };
-
-// const initStickyNav = () => {
-//   const windowScroll = () => {
-//     const navbar = document.getElementById("navbar");
-//     if (navbar) {
-//       if (
-//         document.body.scrollTop >= 75 ||
-//         document.documentElement.scrollTop >= 75
-//       ) {
-//         navbar.classList.add("nav-sticky");
-//       } else {
-//         navbar.classList.remove("nav-sticky");
-//       }
-//     }
-//   };
-
-//   window.addEventListener("scroll", (ev) => {
-//     ev.preventDefault();
-//     windowScroll();
-//   });
-// };
 </script>
