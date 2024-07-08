@@ -33,7 +33,7 @@
               </button></a
             >
 
-            <div class="w-[200px] md:w-[350px]">
+            <!-- <div class="w-[200px] md:w-[350px]">
               <select
                 v-model="selectedLink"
                 @change="navigate"
@@ -60,7 +60,7 @@
                 <option value="https://getdp.co/XDS">Jakun</option>
                 <option value="https://getdp.co/XDM">Edo</option>
               </select>
-            </div>
+            </div> -->
           </div>
 
           <div class="pt-10 md:pt-20">
