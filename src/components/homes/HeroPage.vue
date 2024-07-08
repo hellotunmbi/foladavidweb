@@ -21,12 +21,16 @@
           <div
             class="animate__animated animate__fadeInUp animate__faster animate__delay-2s flex gap-4 pt-4 items-center"
           >
-            <router-link :to="{ name: 'project' }">
+            <a
+              href="https://forms.gle/g6BeVsuJWQ6ZPQVHA"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button
                 class="capitalize bg-primary hover:text-warning px-3 md:px-6 hover:bg-primary/80 text-xs sm:text-sm 2xl:text-lg cursor-pointer text-white py-3 rounded-md"
               >
                 register to attend
-              </button></router-link
+              </button></a
             >
 
             <div class="w-[220px] md:w-[350px]">
