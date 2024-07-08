@@ -90,7 +90,9 @@
             Register
           </button>
           <template #content>
-            <div class="bg-primary border p-2 rounded-md space-y-2 text-white">
+            <div
+              class="bg-primary border w-[170px] md:w-full p-2 rounded-md space-y-2 text-white"
+            >
               <div class="hover:text-warning-600 py-2 border-b-[0.5px] text-sm">
                 <a
                   href="https://forms.gle/qk396PCqh9RTKDvS7"
