@@ -30,8 +30,12 @@
     </p>
   </div>
   <div class="flex flex-col md:flex-row gap-5 mt-5">
+    <p class="text-sm md:text-base">Date:</p>
+    <p class="text-base sm:text-xl text-warning">16th - 21st JULY, 2024</p>
+  </div>
+  <div class="flex flex-col md:flex-row gap-5 mt-5">
     <p class="text-sm md:text-base">Time:</p>
-    <p class="text-base sm:text-xl text-warning">10.00 AM - 10.00 PM</p>
+    <p class="text-base sm:text-xl text-warning">10.00 AM - 10.00 PM DAILY</p>
   </div>
 </template>
 
