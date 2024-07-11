@@ -17,7 +17,7 @@
       <!-- Navigation Menu -->
       <div>
         <ul
-          class="menu sm:flex items-center justify-end hidden relative mx-auto grow"
+          class="menu lg:flex items-center justify-end hidden relative mx-auto grow"
         >
           <li
             class="menu-item text-default-600 mx-2 transition-all duration-300 hover:text-warning [&.active]:text-warning"
@@ -83,15 +83,15 @@
       </div>
 
       <div class="flex gap-3 items-center">
-        <popper hover>
+        <popper hover placement="left">
           <button
-            class="rounded-xl inline-flex text-xs border border-default-400 px-3 py-2 text-default-950 md:text-sm transition-all duration-300 bg-primary-900 hover:bg-warning-600 hover:text-white cursor-pointer"
+            class="rounded-md inline-flex text-xs border border-default-400 px-3 py-2 text-default-950 md:text-sm transition-all duration-300 bg-primary-900 hover:bg-warning-600 hover:text-white cursor-pointer"
           >
             Register
           </button>
           <template #content>
             <div
-              class="bg-primary border w-[170px] md:w-full p-2 rounded-md space-y-2 text-white"
+              class="bg-primary border w-full p-2 mt-10 mr-5 rounded-md space-y-2 text-white"
             >
               <div class="hover:text-warning-600 py-2 border-b-[0.5px] text-sm">
                 <a
@@ -113,17 +113,27 @@
           </template>
         </popper>
 
+        <div class="md:flex hidden">
+          <a href="/brochure.pdf" download="World Record Bronchure">
+            <button
+              class="border rounded-md border-primary-400 p-2 text-xs sm:text-sm hover:bg-primary-900/20"
+            >
+              Download Bronchure
+            </button></a
+          >
+        </div>
+
         <div>
           <MenuIcon
             v-if="!navDrawer"
             @click="openNav"
-            class="w-7 h-7 text-default-600 hover:text-default-900 sm:hidden"
+            class="w-7 h-7 text-default-600 hover:text-default-900 lg:hidden"
           />
 
           <X
             v-else
             @click="closeNav"
-            class="w-7 h-7 text-default-600 hover:text-default-900 sm:hidden"
+            class="w-7 h-7 text-default-600 hover:text-default-900 lg:hidden"
           />
         </div>
       </div>

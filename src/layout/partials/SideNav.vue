@@ -15,7 +15,7 @@
       >
         <!-- Navigation Menu -->
         <ul
-          class="menu w-full sm:flex items-center space-y-7 justify-end relative mx-auto grow"
+          class="menu w-full items-center space-y-7 justify-end relative mx-auto grow"
         >
           <li
             @click="closeNav"
@@ -83,6 +83,16 @@
               >Contact Us</router-link
             >
           </li>
+
+          <div class="md:hidden">
+            <a href="/brochure.pdf" download="World Record Bronchure">
+              <button
+                class="border rounded-md border-primary-400 p-2 text-xs sm:text-sm hover:bg-primary-900/20"
+              >
+                Download Bronchure
+              </button></a
+            >
+          </div>
         </ul>
         <popper hover>
           <button
