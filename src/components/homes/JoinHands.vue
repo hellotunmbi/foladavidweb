@@ -49,7 +49,7 @@
                   coordination to social media promotion.
                 </p>
 
-                <a
+                <!-- <a
                   href="https://forms.gle/qk396PCqh9RTKDvS7"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -58,7 +58,7 @@
                   >
                     Click here to register
                   </p></a
-                >
+                > -->
               </div>
             </div>
             <div class="p-6 flex flex-wrap sm:flex-nowrap items-center gap-6">

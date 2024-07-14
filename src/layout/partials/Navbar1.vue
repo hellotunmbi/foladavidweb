@@ -93,14 +93,14 @@
             <div
               class="bg-primary border w-full p-2 mt-10 mr-5 rounded-md space-y-2 text-white"
             >
-              <div class="hover:text-warning-600 py-2 border-b-[0.5px] text-sm">
+              <!-- <div class="hover:text-warning-600 py-2 border-b-[0.5px] text-sm">
                 <a
                   href="https://forms.gle/qk396PCqh9RTKDvS7"
                   target="_blank"
                   rel="noopener noreferrer"
                   >Register to volunteer</a
                 >
-              </div>
+              </div> -->
               <div class="hover:text-warning-600 py-2 text-sm">
                 <a
                   href="https://forms.gle/g6BeVsuJWQ6ZPQVHA"
