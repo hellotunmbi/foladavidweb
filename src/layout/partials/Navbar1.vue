@@ -83,35 +83,17 @@
       </div>
 
       <div class="flex gap-3 items-center">
-        <popper hover placement="left">
+        <a
+          href="https://forms.gle/g6BeVsuJWQ6ZPQVHA"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button
             class="rounded-md inline-flex text-xs border border-default-400 px-3 py-2 text-default-950 md:text-sm transition-all duration-300 bg-primary-900 hover:bg-warning-600 hover:text-white cursor-pointer"
           >
             Register
-          </button>
-          <template #content>
-            <div
-              class="bg-primary border w-full p-2 mt-10 mr-5 rounded-md space-y-2 text-white"
-            >
-              <!-- <div class="hover:text-warning-600 py-2 border-b-[0.5px] text-sm">
-                <a
-                  href="https://forms.gle/qk396PCqh9RTKDvS7"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Register to volunteer</a
-                >
-              </div> -->
-              <div class="hover:text-warning-600 py-2 text-sm">
-                <a
-                  href="https://forms.gle/g6BeVsuJWQ6ZPQVHA"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Register to attend for free</a
-                >
-              </div>
-            </div>
-          </template>
-        </popper>
+          </button></a
+        >
 
         <div class="md:flex hidden">
           <a href="/brochure.pdf" download="World Record Bronchure">
