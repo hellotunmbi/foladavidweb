@@ -89,7 +89,7 @@
               <button
                 class="border rounded-md border-primary-400 p-2 text-xs sm:text-sm hover:bg-primary-900/20"
               >
-                Download Bronchure
+                Download Brochure
               </button></a
             >
           </div>
