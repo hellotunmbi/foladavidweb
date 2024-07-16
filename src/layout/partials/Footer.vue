@@ -172,7 +172,7 @@
           {{ year }}
           © Unity in Diversity. All right Reversed. Designed by
           <a
-            href="https://www.cloudspheretech.com"
+            href="http://linktr.ee/cloudspheretech"
             target="_blank"
             rel="noopener noreferrer"
             ><span
