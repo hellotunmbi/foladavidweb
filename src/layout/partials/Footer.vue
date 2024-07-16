@@ -1,5 +1,5 @@
 <!-- eslint-disable vue/multi-word-component-names -->
-// eslint-disable-next-line vue/multi-word-component-names
+
 <template>
   <div
     class="bg-gradient-to-r from-[#181630] shadow-lg via-[#032136] to-[#181630]"
@@ -172,7 +172,7 @@
           {{ year }}
           © Unity in Diversity. All right Reversed. Designed by
           <a
-            href="http://linktr.ee/cloudspheretech"
+            href="https://www.cloudspheretech.com"
             target="_blank"
             rel="noopener noreferrer"
             ><span
