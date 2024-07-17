@@ -23,21 +23,14 @@
           <option value="" disabled selected>
             Select your tribe, Generate free custom DP
           </option>
-          <option value="https://getdp.co/Xyi">Fulani</option>
-          <option value="https://getdp.co/XyV">Hausa</option>
-          <option value="https://getdp.co/Xyq">Yoruba</option>
-          <option value="https://getdp.co/Xyo">Igbo</option>
-          <option value="https://getdp.co/Xyj">Ibibio</option>
-          <option value="https://getdp.co/XyX">Ijaw</option>
-          <option value="https://getdp.co/Xyp">kanuri</option>
-          <option value="https://getdp.co/XyL">Tiv</option>
-          <option value="https://getdp.co/XCR">Nupe</option>
-          <option value="https://getdp.co/XD0">Efik</option>
-          <option value="https://getdp.co/XDa">Annang</option>
-          <option value="https://getdp.co/XDu">Igala</option>
-          <option value="https://getdp.co/XD1">Gwari</option>
-          <option value="https://getdp.co/XDS">Jakun</option>
-          <option value="https://getdp.co/XDM">Edo</option>
+          <option
+            class="capitalize"
+            v-for="(dp, index) in getDps"
+            :key="index"
+            :value="dp?.link"
+          >
+            {{ dp?.tribe }}
+          </option>
         </select>
       </div>
     </div>
@@ -48,6 +41,7 @@
 import Popper from "vue3-popper";
 import type { PropType, defineEmits } from "vue";
 import { ref } from "vue";
+import { getDps } from "@/utilities/dps";
 
 const selectedLink = ref("");
 

@@ -128,7 +128,7 @@
             Nigerian tribes.
           </p>
 
-          <!-- <div
+          <div
             @click="openModal"
             class="group hidden md:inline-flex mt-5 md:mt-10 items-center justify-center gap-2 rounded-full border border-default-400 px-1 py-1 pe-4 text-default-950 transition-all duration-300 hover:bg-warning-600 hover:text-white cursor-pointer"
           >
@@ -153,7 +153,7 @@
             <span class="text-xs sm:text-sm"
               >Generate your custom dp for free</span
             >
-          </div> -->
+          </div>
         </div>
       </div>
     </section>
