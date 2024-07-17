@@ -84,7 +84,7 @@
 
       <div class="flex gap-3 items-center">
         <a
-          href="https://forms.gle/g6BeVsuJWQ6ZPQVHA"
+          href="https://docs.google.com/forms/d/e/1FAIpQLScNh13bRfDS8YQaKN7OZvkNL21DL7G1TlxJaB6Ch7_suGZkng/viewform?usp=sf_link"
           target="_blank"
           rel="noopener noreferrer"
         >
