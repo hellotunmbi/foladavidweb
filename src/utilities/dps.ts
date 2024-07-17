@@ -1,5 +1,4 @@
 export const getDps = [
-  { tribe: "Abayon", link: "https://getdp.co/pkd" },
   { tribe: "Fulani", link: "https://getdp.co/Xyi" },
   { tribe: "Hausa", link: "https://getdp.co/XyV" },
   { tribe: "Yoruba", link: "https://getdp.co/Xyq" },
@@ -16,6 +15,7 @@ export const getDps = [
   { tribe: "Jakun", link: "https://getdp.co/XDS" },
   { tribe: "Edo", link: "https://getdp.co/XDM" },
   { tribe: "Abua", link: "https://getdp.co/pkK" },
+  { tribe: "Abayon", link: "https://getdp.co/pkd" },
   { tribe: "Achipa", link: "https://getdp.co/pkP" },
   { tribe: "Adim", link: "https://getdp.co/pki" },
   { tribe: "Adun", link: "https://getdp.co/pkV" },
