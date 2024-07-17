@@ -1,6 +1,8 @@
 /* _reboot.css */
 
-@import url("https://fonts.googleapis.com/css2?family=REM:wght@200;300;400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=REM:wght@200;300;400;500;600;700&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 html {
   @apply relative scroll-smooth bg-[#052036];
@@ -8,6 +10,7 @@ html {
 
 body {
   font-size: 18px;
+  font-family: "Montserrat", sans-serif;
   @apply overflow-x-hidden  bg-gradient-to-r from-[#181630] via-[#032136] to-[#181630] font-body font-normal text-default-700 antialiased;
   scroll-behavior: smooth;
 }
