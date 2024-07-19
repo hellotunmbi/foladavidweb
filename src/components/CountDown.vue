@@ -28,7 +28,7 @@ import { defineComponent, ref, onMounted, onUnmounted } from "vue";
 export default defineComponent({
   name: "CountDown",
   setup() {
-    const targetDate = ref(new Date("Jul 21, 2024").getTime());
+    const targetDate = ref(new Date("2024-07-21T22:00:00").getTime());
     const days = ref(0);
     const hours = ref(0);
     const minutes = ref(0);
