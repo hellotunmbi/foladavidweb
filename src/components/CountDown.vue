@@ -1,41 +1,24 @@
 <template>
+  <div></div>
   <div class="flex flex-col md:flex-row gap-5 sm:items-center">
-    <div>
-      <p class="text-sm md:text-base">Event Days:</p>
-    </div>
     <div class="flex items-center gap-5">
-      <div class="border rounded-lg bg-default-500 py-2 w-[70px] md:w-[100px]">
-        <p class="text-2xl sm:text-4xl text-center">{{ days }}</p>
+      <div class="border rounded-lg bg-default-500 py-2 w-[70px] md:w-[150px]">
+        <p class="text-4xl sm:text-7xl text-center">{{ days }}</p>
         <p class="text-center text-sm md:text-base">Days</p>
       </div>
-      <div class="border rounded-lg bg-default-500 py-2 w-[70px] md:w-[100px]">
-        <p class="text-2xl sm:text-4xl text-center">{{ hours }}</p>
+      <div class="border rounded-lg bg-default-500 py-2 w-[70px] md:w-[150px]">
+        <p class="text-4xl sm:text-7xl text-center">{{ hours }}</p>
         <p class="text-center text-sm md:text-base">Hours</p>
       </div>
-      <div class="border rounded-lg bg-default-500 py-2 w-[70px] md:w-[100px]">
-        <p class="text-2xl sm:text-4xl text-center">{{ minutes }}</p>
+      <div class="border rounded-lg bg-default-500 py-2 w-[70px] md:w-[150px]">
+        <p class="text-4xl sm:text-7xl text-center">{{ minutes }}</p>
         <p class="text-center text-sm md:text-base">Minutes</p>
       </div>
-      <div class="border rounded-lg bg-default-500 py-2 w-[70px] md:w-[100px]">
-        <p class="text-2xl sm:text-4xl text-center">{{ seconds }}</p>
+      <div class="border rounded-lg bg-default-500 py-2 w-[70px] md:w-[150px]">
+        <p class="text-4xl sm:text-7xl text-center">{{ seconds }}</p>
         <p class="text-center text-sm md:text-base">Seconds</p>
       </div>
     </div>
-  </div>
-
-  <div class="flex flex-col md:flex-row gap-5 mt-5">
-    <p class="text-sm md:text-base">Venue:</p>
-    <p class="text-base sm:text-xl text-warning">
-      Mobolaji Johnson Arena (ONIKAN STADIUM), LAGOS ISLAND, LAGOS.
-    </p>
-  </div>
-  <div class="flex flex-col md:flex-row gap-5 mt-5">
-    <p class="text-sm md:text-base">Date:</p>
-    <p class="text-base sm:text-xl text-warning">16th - 21st JULY, 2024</p>
-  </div>
-  <div class="flex flex-col md:flex-row gap-5 mt-5">
-    <p class="text-sm md:text-base">Time:</p>
-    <p class="text-base sm:text-xl text-warning">10.00 AM - 10.00 PM DAILY</p>
   </div>
 </template>
 
@@ -45,7 +28,7 @@ import { defineComponent, ref, onMounted, onUnmounted } from "vue";
 export default defineComponent({
   name: "CountDown",
   setup() {
-    const targetDate = ref(new Date("Jul 16, 2024").getTime());
+    const targetDate = ref(new Date("Jul 21, 2024").getTime());
     const days = ref(0);
     const hours = ref(0);
     const minutes = ref(0);

@@ -4,8 +4,26 @@
     <div class="mt-10 md:mt-20">
       <HeroPage />
     </div>
+
+    <div>
+      <div class="py-10 md:py-20 flex justify-center">
+        <!-- <h3 class="pb-2">Finish Time</h3> -->
+        <CountDown />
+      </div>
+      <iframe
+        width="100%"
+        height="600"
+        src="https://www.youtube.com/embed/0O8H7d1rK5U?si=Vq2m7qu_AENmXqyB"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+
     <!-- media -->
-    <div class="">
+    <div class="mt-10">
       <MediaView />
     </div>
 
@@ -22,6 +40,7 @@
     <div class="py-10">
       <ProjectView />
     </div>
+
     <SponsorView />
 
     <!-- Join hands -->
@@ -38,6 +57,7 @@
 
 <script setup lang="ts">
 import HeroPage from "@/components/homes/HeroPage.vue";
+import CountDown from "@/components/CountDown.vue";
 import MarqueeGroup from "@/components/MarqueeGroup.vue";
 import VideoComp from "@/components/VideoComp.vue";
 import AboutView from "@/components/homes/AboutView.vue";

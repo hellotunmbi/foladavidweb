@@ -55,8 +55,28 @@
             </div>
           </div>
 
-          <div class="pt-10 md:pt-20">
+          <!-- <div class="pt-10 md:pt-20">
+            <h3 class="pb-2">Finish Time</h3>
             <CountDown />
+          </div> -->
+
+          <div class="flex flex-col md:flex-row gap-5 mt-5">
+            <p class="text-sm md:text-base">Venue:</p>
+            <p class="text-base sm:text-xl text-warning">
+              Mobolaji Johnson Arena (ONIKAN STADIUM), LAGOS ISLAND, LAGOS.
+            </p>
+          </div>
+          <div class="flex flex-col md:flex-row gap-5 mt-5">
+            <p class="text-sm md:text-base">Date:</p>
+            <p class="text-base sm:text-xl text-warning">
+              16th - 21st JULY, 2024
+            </p>
+          </div>
+          <div class="flex flex-col md:flex-row gap-5 mt-5">
+            <p class="text-sm md:text-base">Time:</p>
+            <p class="text-base sm:text-xl text-warning">
+              10.00 AM - 10.00 PM DAILY
+            </p>
           </div>
         </div>
       </div>
@@ -160,7 +180,7 @@
 <script setup lang="ts">
 import Popper from "vue3-popper";
 import { ArrowUpRightIcon } from "lucide-vue-next";
-import CountDown from "@/components/CountDown.vue";
+// import CountDown from "@/components/CountDown.vue";
 import { getDps } from "@/utilities/dps";
 // import { tribes } from "@/utilities/tribes";
 
