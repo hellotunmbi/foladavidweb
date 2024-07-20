@@ -1,8 +1,10 @@
 <template>
   <section class="pt-10 md:py-20" ref="scrollRef">
     <div class="container2">
-      <div class="flex items-end justify-between">
-        <div class="animate__animated animate__fadeInUp animate__delay-2s">
+      <div class="flex items-end justify-center">
+        <div
+          class="animate__animated animate__fadeInUp animate__delay-2s text-center"
+        >
           <span
             class="py-1 px-3 rounded-md text-white text-xs lg:text-sm font-medium uppercase tracking-wider border border-primary bg-warning/30"
             >About</span
