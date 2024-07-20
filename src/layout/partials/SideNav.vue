@@ -1,8 +1,6 @@
 <template>
   <!-- Mobile Menu (Sidebar Menu) -->
-  <div
-    class="bg-gradient-to-r from-[#181630] via-[#032136] to-[#181630] fixed top-0 pt-20 z-50 w-[250px] h-full"
-  >
+  <div class="bg-primaryy shadow-lg fixed top-0 pt-20 z-50 w-[250px] h-full">
     <!-- <div
       @click="closeNav"
       class="flex justify-end items-center mr-2 border-default-200 h-16 transition-all duration-300"
@@ -23,8 +21,8 @@
           >
             <router-link
               class="inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 rounded-full capitalize"
-              :class="active.includes('/') ? 'text-warning' : ''"
-              :to="{ name: 'home' }"
+              :class="active.includes('unityindiversity') ? 'text-warning' : ''"
+              :to="{ name: 'uidhome' }"
               >Home</router-link
             >
           </li>

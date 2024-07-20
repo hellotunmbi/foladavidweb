@@ -1,9 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 
 <template>
-  <div
-    class="bg-gradient-to-r from-[#181630] shadow-lg via-[#032136] to-[#181630]"
-  >
+  <div class="bg-primaryy">
     <footer>
       <div class="border-y border-default-300">
         <div class="container py-10 md:py-20">
@@ -27,7 +25,7 @@
 
             <div class="">
               <h5
-                class="xl:text-xl lg:text-lg font-medium text-default-800 mb-4"
+                class="xl:text-xl lg:text-lg font-medium text-grey-shades mb-4"
               >
                 Company
               </h5>
@@ -74,7 +72,7 @@
             <div class="">
               <ul class="flex flex-col gap-3">
                 <h5
-                  class="xl:text-xl lg:text-lg font-medium text-default-800 mb-4"
+                  class="xl:text-xl lg:text-lg font-medium text-grey-shades mb-4"
                 >
                   Social Media
                 </h5>

@@ -1,14 +1,14 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <!-- Main Navigation Menu -->
-  <header
-    class="inset-x-0 top-0 left-0 right-0 z-50 py-3 shadow-2xl bg-gradient-to-r from-[#181630] via-[#032136] to-[#181630] fixed"
+  <section
+    class="inset-x-0 top-0 left-0 right-0 z-50 py-3 shadow-2xl bg-primaryy fixed"
   >
     <section class="container2 flex items-center justify-between gap-4">
       <div class="">
         <div class="flex gap-2 items-center">
           <!-- Navbar Brand Logo -->
-          <router-link :to="{ name: 'home' }">
+          <router-link to="/unityindiversity">
             <img :src="logoLight" alt="logo" class="h-12 md:h-24 dark:flex" />
           </router-link>
         </div>
@@ -24,8 +24,8 @@
           >
             <router-link
               class="inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 rounded-full capitalize"
-              :class="active.includes('home') ? 'text-warning' : ''"
-              :to="{ name: 'home' }"
+              :class="active.includes('uidhome') ? 'text-warning' : ''"
+              :to="{ name: 'uidhome' }"
               >Home</router-link
             >
           </li>
@@ -120,7 +120,7 @@
         </div>
       </div>
     </section>
-  </header>
+  </section>
 </template>
 
 <script setup lang="ts">
