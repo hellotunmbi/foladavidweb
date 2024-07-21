@@ -20,13 +20,13 @@
       </div>
     </div>
     <div class="space-y-3 absolute bottom-4 right-4">
-      <p class="font-medium text-sm md:text-base">
+      <p class="font-medium text-xs md:text-base">
         Join Dr. Foladavid <br />
         On Social Media
       </p>
       <img
         src="@/assets/images/qr.svg"
-        class="h-[150px] bg-white w-[150px]"
+        class="h-[100px] md:h-[150px] bg-white w-[100px] md:w-[150px]"
         alt=""
       />
     </div>

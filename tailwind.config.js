@@ -36,6 +36,24 @@ const config = {
           ...colors.yellow,
           DEFAULT: colors.yellow["500"],
         },
+        primaryy: "#111927",
+        accent: {
+          shades: "#d9d9d9",
+          DEFAULT: "#B79685", //
+          tint: "#F1F1F1",
+          light: "#f1f1f1be",
+        },
+
+        grey: {
+          shades: "#AEB3CD",
+          DEFAULT: "#535875", //
+          tint: "#f6f7fb",
+        },
+        white: {
+          shades: "#FAFAFA",
+          DEFAULT: "#FFFFFF", //
+          tint: "#f6f7fb",
+        },
       },
 
       zIndex: {

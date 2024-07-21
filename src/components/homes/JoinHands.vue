@@ -43,22 +43,13 @@
                 <h3 class="text-2xl font-medium text-default-950">
                   Volunteer Opportunities
                 </h3>
-                <p class="text-base mt-3">
-                  Join our team and contribute to the Unity in Diversity
-                  Project. We welcome volunteers for various roles, from event
-                  coordination to social media promotion.
-                </p>
-
-                <!-- <a
-                  href="https://forms.gle/qk396PCqh9RTKDvS7"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><p
-                    class="text-primary text-base hover:underline underline-offset-2 underline-primary font-bold"
+                <p class="mt-3">
+                  <span class="text-sm md:text-base"
+                    >Join our team and contribute to the Unity in Diversity
+                    Project. We welcome volunteers for various roles, from event
+                    coordination to social media promotion.</span
                   >
-                    Click here to register
-                  </p></a
-                > -->
+                </p>
               </div>
             </div>
             <div class="p-6 flex flex-wrap sm:flex-nowrap items-center gap-6">
@@ -74,11 +65,13 @@
                   Participate Online
                 </h3>
                 <p class="text-base mt-3">
-                  Use the hashtag
+                  <span class="text-sm md:text-base">Use the hashtag </span>
                   <span class="font-bold text-warning">#RepYourTribe</span>
-                  on social media to share your cultural heritage and join the
-                  conversation. Follow us on [social media links] for updates
-                  and more.
+                  <span class="text-sm md:text-base"
+                    >on social media to share your cultural heritage and join
+                    the conversation. Follow us on [social media links] for
+                    updates and more.</span
+                  >
                 </p>
               </div>
             </div>
@@ -94,10 +87,13 @@
                 <h3 class="text-2xl font-medium text-default-950">
                   Attend Events
                 </h3>
-                <p class="text-base mt-3">
-                  Check out our upcoming events and be part of the celebration.
-                  From the Road to Record documentary screenings to the World
-                  Record Attempt, there's something for everyone.
+                <p class="mt-3">
+                  <span class="text-sm md:text-base"
+                    >Check out our upcoming events and be part of the
+                    celebration. From the Road to Record documentary screenings
+                    to the World Record Attempt, there's something for
+                    everyone.</span
+                  >
                 </p>
               </div>
             </div>

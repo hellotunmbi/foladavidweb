@@ -3,20 +3,24 @@
     <div class="mt-5 md:mt-20">
       <h3 class="text-2xl md:text-3xl lg:text-5xl">The Projects</h3>
       <p class="mt-5">
-        Welcome to the Unity in Diversity Project, an inspiring initiative led
-        by Dr. Foladavid in collaboration with Tolaram Group. Our mission is to
-        celebrate and promote the rich cultural diversity of Nigeria, fostering
-        unity and understanding through artistic expression, cultural
-        exploration, and communal festivities.
+        <span class="text-sm md:text-base">
+          Welcome to the Unity in Diversity Project, an inspiring initiative led
+          by Dr. Foladavid in collaboration with Tolaram Group. Our mission is
+          to celebrate and promote the rich cultural diversity of Nigeria,
+          fostering unity and understanding through artistic expression,
+          cultural exploration, and communal festivities.</span
+        >
       </p>
       <p class="mt-5">
-        <span class="font-bold text-xl text-warning"> Unity in diversity </span
-        >in Nigeria is a concept that highlights the strength and potential of
-        the country's multicultural and multiethnic composition. Nigeria, with
-        its over 250 ethnic groups and more than 500 languages, presents a rich
-        tapestry of cultures, traditions, and religions. This diversity is both
-        a source of vibrancy and a challenge, necessitating efforts to foster
-        unity among its people.
+        <span class="font-bold text-xl text-warning"> Unity in diversity </span>
+        <span class="text-sm md:text-base">
+          in Nigeria is a concept that highlights the strength and potential of
+          the country's multicultural and multiethnic composition. Nigeria, with
+          its over 250 ethnic groups and more than 500 languages, presents a
+          rich tapestry of cultures, traditions, and religions. This diversity
+          is both a source of vibrancy and a challenge, necessitating efforts to
+          foster unity among its people.</span
+        >
       </p>
     </div>
 
@@ -29,10 +33,10 @@
           />
         </div>
         <div class="mt-5 md:mt-24 2xl:mt-40">
-          <h2 class="mt-5 text-4xl font-medium text-default-950">
+          <h2 class="mt-5 text-3xl md:text-4xl font-medium text-default-950">
             Historical Context
           </h2>
-          <p class="mt-5">
+          <p class="mt-5 text-sm md:text-base">
             Nigeria's history has been shaped by its diverse ethnic groups long
             before colonial times. The amalgamation of Northern and Southern
             Nigeria in 1914 by the British colonial administration brought
@@ -66,11 +70,16 @@
         <div class="w-full animate__animated animate__zoomIn animate__delay-2s">
           <h3 class="text-2xl text-warning uppercase">World record attempt</h3>
           <p class="pt-4">
-            <span class="font-bold text-xl"> A Canvas of Diversity</span>
-            Witness history in the making as Dr. Foladavid attempts to create
-            the world's largest drawing by an individual. This monumental
-            artwork, spanning 850m², will depict Nigeria's myriad tribes in
-            vibrant detail, showcasing their traditions, attire, and essence.
+            <span class="font-bold text-base text-base md:text-xl">
+              A Canvas of Diversity</span
+            >
+            <span class="text-sm md:text-base">
+              Witness history in the making as Dr. Foladavid attempts to create
+              the world's largest drawing by an individual. This monumental
+              artwork, spanning 850m², will depict Nigeria's myriad tribes in
+              vibrant detail, showcasing their traditions, attire, and
+              essence.</span
+            >
           </p>
         </div>
       </div>
@@ -84,10 +93,14 @@
         >
           <h3 class="text-2xl text-warning uppercase">Road to Record</h3>
           <p class="pt-4">
-            <span class="font-bold text-xl"> A Cultural Odyssey </span>
-            Embark on a mesmerizing journey across Nigeria in the documentary
-            "Road to Record," capturing the essence of our diverse
-            ethnic-nationalities and tribes.
+            <span class="font-bold text-base md:text-xl">
+              A Cultural Odyssey
+            </span>
+            <span class="text-sm md:text-base">
+              Embark on a mesmerizing journey across Nigeria in the documentary
+              "Road to Record," capturing the essence of our diverse
+              ethnic-nationalities and tribes.</span
+            >
           </p>
         </div>
         <div
@@ -120,12 +133,16 @@
             Rep Your Tribe Carnival
           </h3>
           <p class="pt-4">
-            <span class="font-bold text-xl">Celebrating Cultural Harmony </span>
-            Join the nationwide celebration with the #UnityInDiversity,
-            #RepYourTribe Carnival, a digital and physical extravaganza honoring
-            Nigeria's cultural tapestry. From tantalizing cuisines to
-            mesmerizing dances, immerse yourself in the beauty and diversity of
-            Nigerian tribes.
+            <span class="font-bold text-base md:text-xl"
+              >Celebrating Cultural Harmony
+            </span>
+            <span class="text-sm md:text-base"
+              >Join the nationwide celebration with the #UnityInDiversity,
+              #RepYourTribe Carnival, a digital and physical extravaganza
+              honoring Nigeria's cultural tapestry. From tantalizing cuisines to
+              mesmerizing dances, immerse yourself in the beauty and diversity
+              of Nigerian tribes.</span
+            >
           </p>
 
           <div
