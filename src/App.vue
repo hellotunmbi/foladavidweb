@@ -21,7 +21,7 @@
             <a href="#"
               ><li
                 @click="activeLink('home')"
-                class="sm:text-sm lg:text-lg cursor-pointer hover:text-accent"
+                class="sm:text-sm lg:text-base cursor-pointer hover:text-accent"
                 :class="active === 'home' ? 'text-accent' : ''"
               >
                 Home
@@ -30,7 +30,7 @@
             <a href="#about"
               ><li
                 @click="activeLink('about')"
-                class="sm:text-sm lg:text-lg cursor-pointer hover:text-accent"
+                class="sm:text-sm lg:text-base cursor-pointer hover:text-accent"
                 :class="active === 'about' ? 'text-accent' : ''"
               >
                 About
@@ -48,7 +48,7 @@
             <a href="#awards"
               ><li
                 @click="activeLink('awards')"
-                class="sm:text-sm lg:text-lg cursor-pointer hover:text-accent"
+                class="sm:text-sm lg:text-base cursor-pointer hover:text-accent"
                 :class="active === 'awards' ? 'text-accent' : ''"
               >
                 Awards
@@ -57,7 +57,7 @@
             <a href="#contact"
               ><li
                 @click="activeLink('contact')"
-                class="sm:text-sm lg:text-lg cursor-pointer hover:text-accent"
+                class="sm:text-sm lg:text-base cursor-pointer hover:text-accent"
                 :class="active === 'contact' ? 'text-accent' : ''"
               >
                 Contact
@@ -72,9 +72,9 @@
                 rel="noopener noreferrer"
               >
                 <button
-                  class="sm:text-sm lg:text-lg font-light uppercase cursor-pointer hover:text-accent border rounded-md px-2 py-1 hover:bg-accent/10"
+                  class="sm:text-sm lg:text-base font-light uppercase cursor-pointer hover:text-accent border rounded-md px-2 py-1 hover:bg-accent/10"
                 >
-                  project
+                  Unity In Diversity
                 </button></a
               >
             </div>
