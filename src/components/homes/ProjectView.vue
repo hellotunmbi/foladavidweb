@@ -16,11 +16,13 @@
             >
               The Projects
             </h2>
-            <p class="text-sm md:text-base lg:text-xl w-full mt-5">
-              The Unity in Diversity Project is a multifaceted initiative aimed
-              at showcasing and preserving Nigeria's cultural heritage through
-              three main components: a documentary journey, a world record art
-              attempt, and a cultural carnival.
+            <p class="lg:text-lg w-full mt-5">
+              <span class="text-sm md:text-base"
+                >The Unity in Diversity Project is a multifaceted initiative
+                aimed at showcasing and preserving Nigeria's cultural heritage
+                through three main components: a documentary journey, a world
+                record art attempt, and a cultural carnival.</span
+              >
             </p>
           </div>
         </div>
@@ -55,7 +57,7 @@
         <div class="flex justify-center mt-10">
           <router-link
             :to="{ name: 'project' }"
-            class="inline-flex items-center hover:text-warning justify-center gap-2 text-base py-3 px-8 rounded-md text-white bg-primary/90 hover:bg-primary transition-all duration-500"
+            class="inline-flex items-center hover:text-warning justify-center gap-2 text-xs md:text-base py-3 px-8 rounded-md text-white bg-primary/90 hover:bg-primary transition-all duration-500"
             >Read More
             <svg
               xmlns="http://www.w3.org/2000/svg"

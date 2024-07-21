@@ -13,7 +13,7 @@
             Contact Us
           </h2>
           <p
-            class="mt-6 text-lg leading-8 text-default-800 animate__animated animate__fadeInUp animate__delay-2s"
+            class="mt-6 text-sm md:text-base leading-8 text-default-800 animate__animated animate__fadeInUp animate__delay-2s"
           >
             Feel free to reach out to us for any inquiries or assistance. We're
             here to help!
@@ -42,14 +42,14 @@
               </dt>
               <dd>
                 <a
-                  class="hover:text-gray-400 text-default-800"
+                  class="hover:text-gray-400 text-sm md:text-base text-default-800"
                   href="mailto:unityindiversity@foladavid.com"
                   >unityindiversity@foladavid.com</a
                 >
               </dd>
             </div>
             <div
-              class="flex gap-x-4 animate__animated animate__fadeInUp animate__delay-2s"
+              class="flex gap-x-4 items-center animate__animated animate__fadeInUp animate__delay-2s"
             >
               <dt class="flex-none">
                 <span class="sr-only">phone</span>
@@ -69,10 +69,15 @@
                   ></path>
                 </svg>
               </dt>
+
               <a href="tel:+234 813 190 6738"></a>
-              <dd class="text-default-800">(+234) 813 190 6738,</dd>
+              <dd class="text-default-800 text-xs md:text-base">
+                (+234) 813 190 6738,
+              </dd>
               <a href="tel:+234 701 374 9934">
-                <dd class="text-default-800">(+234) 701 374 9934</dd></a
+                <dd class="text-default-800 text-xs md:text-base">
+                  (+234) 701 374 9934
+                </dd></a
               >
             </div>
             <div class="flex items-center gap-5">
@@ -238,7 +243,7 @@
             <button
               type="submit"
               @click="sendEmail"
-              class="flex items-center rounded-md hover:text-warning bg-primary/90 px-6 py-2 text-white transition-all hover:bg-primary"
+              class="flex items-center text-sm md:text-base rounded-md hover:text-warning bg-primary/90 px-6 py-2 text-white transition-all hover:bg-primary"
             >
               Send Messages
               <svg

@@ -18,7 +18,7 @@
       </div>
 
       <div
-        class="grid md:grid-cols-2 grid-cols-1 gap-x-16 gap-y-10 mt-5 md:mt-10 items-center"
+        class="grid md:grid-cols-2 grid-cols-1 gap-x-16 gap-y-10 mt-5 md:mt- items-center"
       >
         <div
           class="rounded-lg h-full w-full animate__animated animate__zoomIn animate__delay-2s"
@@ -30,9 +30,9 @@
           />
         </div>
 
-        <div class="space-y-8">
-          <h2
-            class="text-3xl text-accent-shades font-medium animate__animated animate__fadeInUp animate__delay-2s"
+        <div class="space-y-5">
+          <h3
+            class="text-2xl text-accent-shades font-medium animate__animated animate__fadeInUp animate__delay-2s"
             :class="
               anime
                 ? 'animate__animated animate__fadeInUp animate__delay-2s'
@@ -40,15 +40,15 @@
             "
           >
             The Unity in Diversity Project
-          </h2>
-          <p
-            class="text-sm 2xl:text-base animate__animated animate__fadeInUp animate__delay-3s"
-          >
-            Welcome to the Unity in Diversity Project, an inspiring initiative
-            led by Dr. Foladavid in collaboration with Tolaram Group. Our
-            mission is to celebrate and promote the rich cultural diversity of
-            Nigeria, fostering unity and understanding through artistic
-            expression, cultural exploration, and communal festivities.
+          </h3>
+          <p class="animate__animated animate__fadeInUp animate__delay-3s">
+            <span class="text-sm md:text-base">
+              Welcome to the Unity in Diversity Project, an inspiring initiative
+              led by Dr. Foladavid in collaboration with Tolaram Group. Our
+              mission is to celebrate and promote the rich cultural diversity of
+              Nigeria, fostering unity and understanding through artistic
+              expression, cultural exploration, and communal festivities.
+            </span>
           </p>
 
           <div class="animate__animated animate__fadeInUp animate__delay-4s">
@@ -61,13 +61,17 @@
             class="space-y-6 px-5 animate__animated animate__fadeInUp animate__delay-5s"
           >
             <li class="list-disc list-warning list-outside">
-              <p class="text-lg text-warning font-bold">Road to Record</p>
+              <p class="text-sm md:text-lg text-warning font-bold">
+                Road to Record
+              </p>
             </li>
             <li class="list-disc list-warning list-outside">
-              <p class="text-lg text-warning font-bold">World Record Attempt</p>
+              <p class="text-sm md:text-lg text-warning font-bold">
+                World Record Attempt
+              </p>
             </li>
             <li class="list-disc list-warning list-outside">
-              <p class="text-lg text-warning font-bold">
+              <p class="text-sm md:text-lg text-warning font-bold">
                 #RepYourTribe Carnival
               </p>
             </li>
@@ -78,7 +82,7 @@
           >
             <router-link
               :to="{ name: 'about' }"
-              class="inline-flex items-center hover:text-warning justify-center gap-2 text-base py-3 px-8 rounded-md text-white bg-primary/90 hover:bg-primary transition-all duration-500"
+              class="inline-flex items-center text-xs md:text-base hover:text-warning justify-center gap-2 py-3 px-8 rounded-md text-white bg-primary/90 hover:bg-primary transition-all duration-500"
               >Read More
             </router-link>
           </div>

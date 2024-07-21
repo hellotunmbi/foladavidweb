@@ -22,9 +22,9 @@ import FooterPage from "@/componentss/FooterPage.vue";
 
 <style scoped>
 .home {
-  font-size: 16px;
+  font-size: 18px;
   background-color: #0f1827;
-  color: #9ca3af;
+  color: #fff;
   scroll-behavior: smooth;
 }
 </style>

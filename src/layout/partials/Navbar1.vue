@@ -72,6 +72,16 @@
           <li
             class="menu-item text-default-600 mx-2 transition-all duration-300 hover:text-warning [&.active]:text-warning"
           >
+            <a
+              href="https://blog.foladavid.com"
+              target="_blank"
+              class="inline-flex items-center text-primary-400 text-sm lg:text-base font-medium py-0.5 px-2 rounded-full capitalize"
+              >Blog</a
+            >
+          </li>
+          <li
+            class="menu-item text-default-600 mx-2 transition-all duration-300 hover:text-warning [&.active]:text-warning"
+          >
             <router-link
               class="inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 rounded-full capitalize"
               :class="active.includes('contact') ? 'text-warning' : ''"

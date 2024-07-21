@@ -20,15 +20,15 @@
           >
             The Unity in Diversity Project
           </h2>
-          <p
-            class="text-sm 2xl:text-base animate__animated animate__zoomIn animate__delay-2s"
+          <span
+            class="text-sm md:text-base animate__animated animate__zoomIn animate__delay-2s"
           >
             Dr. Foladavid, medical doctor, visual artist, and humanitarian in
             collaboration with Tolaram Group, proudly unveils "The Unity in
             Diversity Project." This groundbreaking intiative is set to
             illuminate Nigeria's vibrant cultural mosaic through an immersive
             journey spanning visual art, documentary and cultural celebration.
-          </p>
+          </span>
 
           <div class="animate__animated animate__zoomIn animate__delay-3s">
             <p class="text-base text-default-700 font-semibold">
@@ -43,7 +43,7 @@
               <p class="text-lg text-warning font-bold">Road to Record</p>
               <p>
                 <span class="font-bold text-base">A Cultural Odyssey </span>
-                <span class="text-sm 2xl:text-base"
+                <span class="text-sm md:text-base"
                   >Filming a mesmerizing road trip across different states of
                   Nigeria's multicultural landscape to experience firsthand,
                   these cultures which will form for their depiction on the
@@ -58,7 +58,7 @@
                 <span class="text-base font-bold"
                   >The largest drawing in the world by an individual
                 </span>
-                <span class="text-sm 2xl:text-base"
+                <span class="text-sm md:text-base"
                   >Prepare for history in the making as Dr.Foladavid aims to
                   break the record for the "world's largest drawing by an
                   individual" at onikan stadium, Lagos from 16th to 21st of July
@@ -76,7 +76,7 @@
                 <span class="font-bold text-base"
                   >Celebrating Diverse Cultures
                 </span>
-                <span class="text-sm 2xl:text-base"
+                <span class="text-sm md:text-base"
                   >A worldwide call to every Nigerian to showoff their tribe
                   using the hashtag <span>#repyourtribe</span> on all online
                   platforms and a physical celebration with #RepYourTribe (#RYT)
@@ -109,7 +109,7 @@
               <span
                 class="block border-t-4 border-white text-center w-[120px] mt-3 pb-10"
               ></span>
-              <span class="text-black pt-10 text-sm 2xl:text-lg">
+              <span class="text-black pt-10 text-sm md:text-base">
                 Our mission is to celebrate and promote the rich cultural
                 diversity of Nigeria, fostering unity and understanding through
                 artistic expression, cultural exploration, and communal
@@ -126,7 +126,7 @@
               <span
                 class="block border-t-4 border-secondary text-center w-[120px] mt-3 pb-10"
               ></span>
-              <span class="text-white text-sm 2xl:text-lg pt-10">
+              <span class="text-white pt-10 text-sm md:text-base">
                 A united Nigeria where every tribe and culture is celebrated and
                 respected, contributing to a harmonious and vibrant nation.
               </span>
@@ -169,28 +169,30 @@
             <h3 class="text-warning text-xl md:text-2xl pb-5">
               Passion To Make A Difference
             </h3>
-            <p>
+            <span class="text-sm md:text-base">
               At the Foladavid Care Foundation, the work we do cuts across a
               wide range of causes in healthcare and art. We collaborate with
               individuals, governments and organizations to pursue healthy
               living, sustainability through the arts, and cooperation across a
               wide range of projects in many communities, nations and regions.
-            </p>
-            <p class="mt-5">
-              We ensure that children and mothers are able to have access to
-              basic human amenities such as food, drugs, clothing and shelter,
-              with the aim of improving their quality of life. To also help
-              improve creativity amongst children, we create well-structured
-              programs where children can actively participate in events that
-              are sure to find and nurture innate talents. The goal of these
-              programs is to help give these kids better futures.
+            </span>
+            <p>
+              <span class="mt-5 text-sm md:text-base">
+                We ensure that children and mothers are able to have access to
+                basic human amenities such as food, drugs, clothing and shelter,
+                with the aim of improving their quality of life. To also help
+                improve creativity amongst children, we create well-structured
+                programs where children can actively participate in events that
+                are sure to find and nurture innate talents. The goal of these
+                programs is to help give these kids better futures.
+              </span>
             </p>
 
             <!--  -->
             <div class="flex mt-10">
               <div
                 @click="openModal"
-                class="inline-flex items-center hover:text-primary-500 justify-center gap-2 text-base py-3 px-8 rounded-md text-primary bg-white/90 hover:bg-white transition-all duration-500 cursor-pointer"
+                class="inline-flex items-center hover:text-primary-500 justify-center gap-2 text-sm md:text-base py-3 px-8 rounded-md text-primary bg-white/90 hover:bg-white transition-all duration-500 cursor-pointer"
               >
                 Donate
                 <svg
