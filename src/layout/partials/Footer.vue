@@ -61,14 +61,14 @@
                     >Media</router-link
                   >
                 </li>
-                <li>
+                <!-- <li>
                   <a
                     href="https://blog.foladavid.com"
                     target="_blank"
                     class="text-xs md:text-base text-primary-400 hover:text-warning-300 transition-all"
                     >Blog</a
                   >
-                </li>
+                </li> -->
                 <li>
                   <router-link
                     :to="{ name: 'contact' }"

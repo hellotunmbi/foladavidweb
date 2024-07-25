@@ -28,11 +28,7 @@ const routes: Array<RouteRecordRaw> = [
         name: "about",
         component: AboutView,
       },
-      {
-        path: "about",
-        name: "about",
-        component: AboutView,
-      },
+
       {
         path: "media",
         name: "media",
