@@ -12,11 +12,13 @@ const routes: Array<RouteRecordRaw> = [
     path: "/",
     name: "home",
     component: MainHomeView,
+    exact: true
   },
 
   {
     path: "/unityindiversity",
     component: HomepageView,
+    exact: true,
     children: [
       {
         path: "",
